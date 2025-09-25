@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="2" parallel="tests" name="crossbrowserSuite">
+	<listeners>
+		<listener class-name="com.orangehrm.listeners.Listener" />
+	</listeners>
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.orangehrm.tests.LoginTests" />
+		</classes>
+	</test> <!-- ChromeTest -->
+	<test name="FireFoxTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.orangehrm.tests.LoginTests" />
+		</classes>
+	</test> <!-- ChromeTest -->
+</suite> <!-- corssbrowserSuite -->

@@ -1,0 +1,6 @@
+[2025-09-24 21:44:47] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-24 21:44:47] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-24 21:44:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-24 21:44:50] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-24 21:44:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-24 21:44:58] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver

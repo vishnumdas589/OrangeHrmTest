@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-24T21:44:47 IST" name="Default suite" finished-at="2025-09-24T21:44:58 IST" duration-ms="10652">
+    <groups>
+    </groups>
+    <test started-at="2025-09-24T21:44:47 IST" name="Default test" finished-at="2025-09-24T21:44:58 IST" duration-ms="10652">
+      <class name="com.orangehrm.tests.LoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.orangehrm.tests.LoginTests@1c6804cd]" started-at="2025-09-24T21:44:47 IST" name="setup" finished-at="2025-09-24T21:44:50 IST" duration-ms="2950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:com.orangehrm.tests.LoginTests@1c6804cd]" started-at="2025-09-24T21:44:50 IST" name="testSuccessfulLogin" finished-at="2025-09-24T21:44:58 IST" duration-ms="7451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.LoginTests@1c6804cd]" started-at="2025-09-24T21:44:58 IST" name="tearDown" finished-at="2025-09-24T21:44:58 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.tests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

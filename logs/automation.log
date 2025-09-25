@@ -1,0 +1,220 @@
+[2025-09-25 00:27:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:27:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:27:21] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:27:21] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:27:21] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:27:27] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 00:32:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:32:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:32:25] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:32:25] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:32:25] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:32:32] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 00:43:48] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:43:48] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:43:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:43:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:43:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:43:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 00:43:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:43:50] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:43:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:43:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:43:50] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:43:53] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 00:43:53] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:43:54] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:43:54] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:43:54] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:48:45] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:48:45] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 00:48:47] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:48:47] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:48:47] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:48:47] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:48:47] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:48:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 00:48:50] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:48:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:48:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:48:50] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:52:48] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:52:48] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:52:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:52:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:52:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 00:52:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:52:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:52:50] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:52:50] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:52:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:52:50] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:52:53] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 00:52:53] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:52:53] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:52:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 00:52:53] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 00:54:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:54:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:54:48] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:54:48] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:54:48] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:54:54] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 00:55:27] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 00:55:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 00:55:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 00:55:29] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 00:55:29] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 00:55:29] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 00:55:29] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 00:55:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 00:55:35] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 00:55:36] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:02:37] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:02:37] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:02:37] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:02:37] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:02:37] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 01:02:37] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 01:02:39] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 01:02:39] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:02:39] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:02:39] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 01:02:42] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 01:02:42] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:02:42] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:02:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 01:02:46] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 01:02:46] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 01:02:46] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:02:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 01:02:50] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 01:02:51] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:04:34] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:04:34] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:04:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:04:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:04:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 01:04:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 01:04:36] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 01:04:36] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:04:36] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:04:36] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 01:04:36] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:04:39] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 01:04:39] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:04:40] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:04:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 01:04:40] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:05:35] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:05:35] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 01:05:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:05:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 01:05:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating firefox Driver
+[2025-09-25 01:05:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 01:05:37] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 01:05:37] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:05:37] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:05:37] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 01:05:40] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created firefox driver
+[2025-09-25 01:05:40] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 01:05:40] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 01:05:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 01:05:43] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 01:05:43] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 01:05:44] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 01:05:48] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 01:05:48] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 01:05:49] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:01:12] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:01:12] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:01:12] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:01:15] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:01:15] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:01:15] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:01:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 18:01:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: testSuccessfulLogin
+[2025-09-25 18:01:22] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:01:22] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:07:52] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:07:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:07:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:07:53] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:07:53] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:07:53] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:07:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 18:07:53] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:09:41] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:09:41] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:09:41] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:09:43] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:09:43] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:09:43] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:09:43] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 18:09:49] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testSuccessfulLogin
+[2025-09-25 18:09:49] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: testSuccessfulLogin
+[2025-09-25 18:09:49] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: testSuccessfulLogin
+[2025-09-25 18:09:49] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:09:50] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:14:52] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:14:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:14:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:14:54] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:14:54] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:14:54] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:14:54] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: IntentionalFailureTest
+[2025-09-25 18:15:01] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: IntentionalFailureTest
+[2025-09-25 18:15:01] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: IntentionalFailureTest
+[2025-09-25 18:15:01] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: IntentionalFailureTest
+[2025-09-25 18:15:01] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 18:15:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testSuccessfulLogin
+[2025-09-25 18:15:50] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: testSuccessfulLogin
+[2025-09-25 18:15:50] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: testSuccessfulLogin
+[2025-09-25 18:15:50] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:15:50] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:17:17] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:17:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:17:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:17:19] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:17:19] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:17:19] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:17:19] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: IntentionalFailureTest
+[2025-09-25 18:17:25] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: IntentionalFailureTest
+[2025-09-25 18:17:25] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: IntentionalFailureTest
+[2025-09-25 18:17:26] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: IntentionalFailureTest
+[2025-09-25 18:17:26] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 18:18:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testSuccessfulLogin
+[2025-09-25 18:18:14] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: testSuccessfulLogin
+[2025-09-25 18:18:14] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: testSuccessfulLogin
+[2025-09-25 18:18:14] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:18:15] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:20:13] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:20:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:20:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:20:15] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:20:15] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:20:15] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:20:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: IntentionalFailureTest
+[2025-09-25 18:20:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: IntentionalFailureTest
+[2025-09-25 18:20:22] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: IntentionalFailureTest
+[2025-09-25 18:20:22] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on Failed Test: IntentionalFailureTest
+[2025-09-25 18:20:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: testSuccessfulLogin
+[2025-09-25 18:20:45] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testSuccessfulLogin
+[2025-09-25 18:20:45] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: testSuccessfulLogin
+[2025-09-25 18:20:45] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testSuccessfulLogin
+[2025-09-25 18:20:45] INFO  com.orangehrm.listeners.Listener - [Listener] Initiating capturing screenshot to report for Test Failed: testSuccessfulLogin
+[2025-09-25 18:20:45] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:20:45] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-09-25 18:22:52] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-09-25 18:22:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Executing DriverManager constructor
+[2025-09-25 18:22:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Creating chrome Driver
+[2025-09-25 18:22:54] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully created chrome driver
+[2025-09-25 18:22:54] INFO  com.orangehrm.managers.DriverManager - [Driver] setting up driver
+[2025-09-25 18:22:54] INFO  com.orangehrm.managers.DriverManager - [Driver] successfully set up of driver
+[2025-09-25 18:22:54] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: testLoginWithInValidCredentials
+[2025-09-25 18:22:54] INFO  com.orangehrm.managers.DriverManager - [Driver] quitting driver
+[2025-09-25 18:22:54] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
