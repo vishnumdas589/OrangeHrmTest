@@ -24,9 +24,9 @@ public class BasePage {
 	protected WebDriverWait wait;
 	protected Actions actions;
 	private static final Logger logger = LoggerManager.getLogger(BasePage.class);
-	public BasePage(WebDriver driver) {
+	public BasePage() {
 		// TODO Auto-generated constructor stub
-		this.driver = driver;
+		this.driver = DriverManager.getDriver();
 		this.actions = new Actions(driver);
 		PageFactory.initElements(driver,this);
 		wait = new WebDriverWait(driver,Duration.ofSeconds(ConfigReader.getExplicitWait()));
@@ -36,6 +36,12 @@ public class BasePage {
 	}
 	public void dragAndDrop(WebElement source,WebElement target) {
 		actions.dragAndDrop(source, target).perform();
+	}
+	public String getCurrentUrl() {
+		return driver.getCurrentUrl();
+	}
+	public void navigateToPreviousUrl() {
+		driver.navigate().back();
 	}
 
 }

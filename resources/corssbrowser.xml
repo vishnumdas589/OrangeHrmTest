@@ -7,6 +7,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.orangehrm.tests.LoginTests" />
+			<class name="com.orangehrm.tests.DashBoardTests" />
 		</classes>
 	</test> <!-- ChromeTest -->
 	<test name="FireFoxTest">

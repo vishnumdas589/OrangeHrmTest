@@ -10,7 +10,7 @@ public class AdminPage extends BasePage {
 	private static final Logger logger = LoggerManager.getLogger(AdminPage.class);
 
 	public AdminPage(WebDriver driver) {
-		super(driver);
+		super();
 		// TODO Auto-generated constructor stub
 	}
 	

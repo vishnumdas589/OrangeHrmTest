@@ -9,8 +9,8 @@ import com.orangehrm.managers.LoggerManager;
 public class LeavePage extends BasePage{
 	private static final Logger logger = LoggerManager.getLogger(LeavePage.class);
 
-	public LeavePage(WebDriver driver) {
-		super(driver);
+	public LeavePage() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

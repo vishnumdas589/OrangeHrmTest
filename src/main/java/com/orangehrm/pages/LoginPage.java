@@ -12,8 +12,9 @@ import com.orangehrm.managers.LoggerManager;
 public class LoginPage extends BasePage  {
 	private static final Logger logger = LoggerManager.getLogger(LoginPage.class);
 
-	public LoginPage(WebDriver driver) {	
-		super(driver);
+	public LoginPage() {
+
+		super();
 	}
 	
 	@FindBy(xpath="//input[@placeholder='Username']")
@@ -35,9 +36,10 @@ public class LoginPage extends BasePage  {
 	public void setUsername(String username) {
 		txtUsername.sendKeys(username);
 	}
-	public void setPassword(String password) {
-		txtPassword.sendKeys(password);
+	public void setPassword(String password) {txtPassword.sendKeys(password);
 	}
+	public void clearUsername() {txtUsername.clear();}
+	public void clearPassword() {txtPassword.clear();}
 	public void clickLogin() {
 		BtnLogin.click();
 	}
@@ -47,14 +49,42 @@ public class LoginPage extends BasePage  {
 	public void loginWithCredentials(String username,String password){
 		
 		wait.until(ExpectedConditions.visibilityOf(txtUsername));
-		txtUsername.clear();
-		txtUsername.sendKeys(username);
-		txtPassword.clear();
-		txtPassword.sendKeys(password);
-		BtnLogin.click();
+		clearUsername();
+		setUsername(username);
+		clearPassword();
+		setPassword(password);
+		clickLogin();
 	}
-	
-	
+	public boolean isErrorDisplayed() {
+		try{
+			return alertInvalidCredencial.isDisplayed();
+		}catch(Exception e){
+			return false;
+		}
 
-	
+	}
+	public boolean isAlertDisplayedForUsername() {
+		try{
+			return alertUserNameRequired.isDisplayed();
+		}catch(Exception e){
+			return false;
+		}
+	}
+	public boolean isAlertDisplayedForPassword() {
+		try{
+			return alertPasswordRequired.isDisplayed();
+		}catch(Exception e){
+			return false;
+		}
+	}
+	public boolean isAnyErrorDisplayed()  {
+			return	isAlertDisplayedForPassword()||isErrorDisplayed()||isAlertDisplayedForUsername();
+
+	}
+
+
+
+
+
+
 }

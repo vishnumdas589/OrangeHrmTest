@@ -51,10 +51,20 @@ public class ConfigReader {
 	public static String getLoginURL() {
 		return properties.getProperty("url.login");
 	}
+	public static String getWorkBookName() {return properties.getProperty("workbook.name");};
+	public static String getDashboardURL() {return properties.getProperty("url.dashboard");}
+	public static String getSheetLoginData(){return properties.getProperty("workbook.sheet.LoginData2D");}
+	public static String getSheetDashBoardLabelData(){return properties.getProperty("workbook.sheet.DashBoardLabelData");}
+	public static String getAssignLeaveURL() {return properties.getProperty("url.assignLeave");}
+	public static String getLeaveListURL() {return properties.getProperty("url.leaveList");}
+	public static String getEmployeeTimesheetURL() {return properties.getProperty("url.employeeTimesheet");}
+	public static String getApplyLeaveURL() {return properties.getProperty("url.applyLeave");}
+	public static String getMyLeaveListURL() {return properties.getProperty("url.myLeaveList");}
+	public static String getMyTimesheetURL() {return properties.getProperty("url.myTimesheet");}
 
-	
 
 
-	
+
+
 
 }

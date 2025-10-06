@@ -9,8 +9,8 @@ import com.orangehrm.managers.LoggerManager;
 public class PIMPage extends BasePage{
 	private static final Logger logger = LoggerManager.getLogger(PIMPage.class);
 
-	public PIMPage(WebDriver driver) {
-		super(driver);
+	public PIMPage() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
