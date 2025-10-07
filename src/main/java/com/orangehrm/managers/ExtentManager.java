@@ -12,7 +12,6 @@ public class ExtentManager {
 
 	public static ExtentReports getInstance() {
 		if (extent == null) {
-			// CHANGE: use File.separator for OS-independence
 			String reportPath = System.getProperty("user.dir") + File.separator + "output"
 					+ File.separator + "test-output" + File.separator + "extent-report.html";
 

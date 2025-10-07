@@ -7,6 +7,10 @@
 	<test thread-count="5" name="LoginTests">
 		<classes>
 			<class name="com.orangehrm.tests.LoginTests" />
+			<class name="com.orangehrm.tests.DashBoardTests" />
+			<class name="com.orangehrm.tests.PIMTests"/>
+			<class name="com.orangehrm.tests.AdminTests"/>
+			<class name="com.orangehrm.tests.LeaveTests"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

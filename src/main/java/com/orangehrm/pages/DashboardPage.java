@@ -20,6 +20,14 @@ public class DashboardPage extends BasePage {
         super();
         // TODO Auto-generated constructor stub
     }
+    @FindBy(xpath = "//span[text()='Admin']")
+    WebElement adminMenu;
+
+    @FindBy(xpath = "//span[text()='PIM']")
+    WebElement pimMenu;
+
+    @FindBy(xpath = "//span[text()='Leave']")
+    WebElement leaveMenu;
 
     @FindBy(xpath = "//h6[text()='Dashboard']")
     WebElement labelDashboard;
@@ -210,12 +218,15 @@ public class DashboardPage extends BasePage {
         return widgets.stream().allMatch(webElement -> webElement.isDisplayed());
     }
 
-    //	for debugging
-    public List<String> getAllWidgetTitles() {
-        return widgets
-                .stream()
-                .map(WebElement::getText)
-                .toList();
+    public void navigateToPimPage(){
+        pimMenu.click();
     }
+    public void navigateToAdminPage() {
+        adminMenu.click();
+    }
+    public void navigateToLeavePage() {
+        leaveMenu.click();
+    }
+
 
 }

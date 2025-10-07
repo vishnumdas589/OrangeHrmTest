@@ -37,12 +37,14 @@ public class DashBoardTests extends BasePageTest {
 	public void verifyQuickLaunchElements() {
 		Assert.assertEquals(dashboardPg.getQuickLaunchButtonsCount(),6);
 		Assert.assertTrue(dashboardPg.isAllQuickLaunchButtonsDisplayed());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickAssignLeave(),ConfigReader.getAssignLeaveURL());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeaveList(),ConfigReader.getLeaveListURL());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickTimesheets(),ConfigReader.getEmployeeTimesheetURL());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickApplyLeave(),ConfigReader.getApplyLeaveURL());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeave(),ConfigReader.getMyLeaveListURL());
-		Assert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyTimesheet(),ConfigReader.getMyTimesheetURL());
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickAssignLeave(),ConfigReader.getAssignLeaveURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeaveList(),ConfigReader.getLeaveListURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickTimesheets(),ConfigReader.getEmployeeTimesheetURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickApplyLeave(),ConfigReader.getApplyLeaveURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeave(),ConfigReader.getMyLeaveListURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyTimesheet(),ConfigReader.getMyTimesheetURL());
+		softAssert.assertAll();
 	}
 	@Test
 	public void verifyEmpDistChart(){
@@ -63,27 +65,9 @@ public class DashBoardTests extends BasePageTest {
 		Assert.assertTrue(true);
 	}
 
-
-
 	@Test
 	public void verifyDashboardCustomization() {
 		Assert.assertTrue(dashboardPg.isCustomisationIconDisplayed());
 	}
-
-	//	@Test
-////			(dataProvider = "DashBoardDataSet",dataProviderClass = DataProviders.class)
-//	public void dashBoardPageLabelTest(HashSet<String>set) {
-//		System.out.println(dashboardPg.getAllWidgetTitles());
-//		for (String title : set) {
-//			String expectedValue = title.trim().toLowerCase();
-//			System.out.println(expectedValue);
-//		}
-//		SoftAssert softAssert = new SoftAssert();
-//		for (String label : set) {
-//			String expectedValue = label.trim().toLowerCase();
-//			softAssert.assertTrue(dashboardPg.checkAllWidgetLabelMatch(expectedValue),"assertion failed for "+ expectedValue);
-//		}
-//		softAssert.assertAll();
-//	}
 
 }

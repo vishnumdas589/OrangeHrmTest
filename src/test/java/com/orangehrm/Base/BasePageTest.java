@@ -43,7 +43,5 @@ public class BasePageTest {
 
 
 
-	// CHANGE: remove screenshot responsibility from BaseTest (moved to ScreenshotUtil)
-	// Keeping here only if you want it, but recommend removing this method entirely
 
 }

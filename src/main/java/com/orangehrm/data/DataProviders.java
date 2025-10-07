@@ -67,4 +67,17 @@ public class DataProviders {
         }
         return data;
     }
+    @DataProvider(name = "adminDataMap")
+    public Object[][] getAdminDataMap() {
+        System.out.println(EXCEL_PATH);
+        ExcelReader reader = new ExcelReader(EXCEL_PATH);
+        List<Map<String, String>> list = reader.getDataAsMap(ConfigReader.getSheetAdminData());
+
+        Object[][] data = new Object[list.size()][1];
+        for (int i = 0; i < list.size(); i++) {
+            data[i][0] = list.get(i);
+        }
+        return data;
+    }
+
 }

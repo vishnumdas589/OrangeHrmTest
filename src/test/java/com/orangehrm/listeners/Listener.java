@@ -19,8 +19,7 @@ public class Listener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		logger.info("[Listener] Test started: {}", result.getMethod().getMethodName());
 		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
-		extentTest.assignCategory(result.getTestClass().getName());//assigning category
-		//Assign browser from TestNG parameter (avoid null)
+		extentTest.assignCategory(result.getTestClass().getName());
 		String browser = result.getTestContext().getCurrentXmlTest().getParameter("browser");
 		if (browser != null) {
 			extentTest.assignCategory("Browser: " + browser);
@@ -53,7 +52,6 @@ public class Listener implements ITestListener {
 
 
 		try {
-			// CHANGE: pull driver directly from DriverManager (ThreadLocal-safe)
 			WebDriver driver = DriverManager.getDriver();
 			String path = ScreenshotUtil.takeScreenshot(driver, result.getMethod().getMethodName());
 			extentTest.addScreenCaptureFromPath(path);

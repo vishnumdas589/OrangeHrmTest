@@ -20,24 +20,23 @@ import com.orangehrm.utils.ConfigReader;
 public class DriverManager {
 	private static final Logger logger = LoggerManager.getLogger(DriverManager.class);
 
-	// CHANGE: use ThreadLocal instead of a single WebDriver instance
+
 	private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
 	private static final Set<String> browsersUsed = new HashSet<>();
 
-	// CHANGE: remove constructor-based driver creation,
-	// instead use initDriver() before each test
+
 	public static void initDriver(String browser) {
 		logger.info("[Driver] Initializing driver for browser: {}", browser);
 		WebDriver driver;
 		switch (browser.toLowerCase()) {
 			case "firefox":
-				WebDriverManager.firefoxdriver().setup(); // FIXED: wrong setup call
+				WebDriverManager.firefoxdriver().setup();
 				FirefoxOptions ff = new FirefoxOptions();
 				ff.addArguments("--disable-notifications");
 				driver = new FirefoxDriver(ff);
 				break;
 			case "edge":
-				WebDriverManager.edgedriver().setup(); // FIXED: wrong setup call
+				WebDriverManager.edgedriver().setup();
 				EdgeOptions edge = new EdgeOptions();
 				edge.addArguments("--disable-notifications");
 				driver = new EdgeDriver(edge);
@@ -51,12 +50,12 @@ public class DriverManager {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getImplicitWait()));
-		DRIVER.set(driver);// CHANGE: assign driver per thread
+		DRIVER.set(driver);
 		browsersUsed.add(browser);
 	}
 
 	public static WebDriver getDriver() {
-		return DRIVER.get(); // CHANGE: now always fetch from ThreadLocal
+		return DRIVER.get();
 	}
 
 	public static void quitDriver() {
@@ -64,7 +63,7 @@ public class DriverManager {
 		WebDriver driver = DRIVER.get();
 		if (driver != null) {
 			driver.quit();
-			DRIVER.remove(); // CHANGE: cleanup ThreadLocal after quit
+			DRIVER.remove();
 		}
 	}
 	public static Set<String> getBrowsersUsed() {

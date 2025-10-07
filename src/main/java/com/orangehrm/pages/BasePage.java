@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,6 +25,14 @@ public class BasePage {
 	protected WebDriverWait wait;
 	protected Actions actions;
 	private static final Logger logger = LoggerManager.getLogger(BasePage.class);
+
+	@FindBy(xpath = "//span[text()='Admin']")
+	WebElement adminMenu;
+	@FindBy(xpath = "//span[text()='PIM']")
+	WebElement pimMenu;
+	@FindBy(xpath = "//span[text()='Leave']")
+	WebElement leaveMenu;
+
 	public BasePage() {
 		// TODO Auto-generated constructor stub
 		this.driver = DriverManager.getDriver();
@@ -42,6 +51,15 @@ public class BasePage {
 	}
 	public void navigateToPreviousUrl() {
 		driver.navigate().back();
+	}
+	public void navigateToPimPage(){
+		pimMenu.click();
+	}
+	public void navigateToAdminPage() {
+		adminMenu.click();
+	}
+	public void navigateToLeavePage() {
+		leaveMenu.click();
 	}
 
 }

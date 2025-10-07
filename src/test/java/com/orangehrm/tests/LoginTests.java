@@ -81,22 +81,7 @@ public class LoginTests extends LoginBaseTest {
 
         }
     }
-//	@Test(dataProvider = "loginDataMap", dataProviderClass = DataProviders.class)
-//	public void testLoginMap(String username, String password) {
-//		loginPg.loginWithCredentials(username, password);
-//		Assert.assertTrue(dashboardPg.isDashboardPageDisplayed());
-//	}
-//	@Test(dataProvider = "loginDataFullMap", dataProviderClass = DataProviders.class)
-//	public void testLoginFullMap(Map<String, String> data) {
-//		String username = data.get("username");
-//		String password = data.get("password");
-//		boolean expected = Boolean.parseBoolean(data.get("expected"));
-//
-//		loginPg.loginWithCredentials(username, password);
-//		boolean actual = dashboardPg.isDashboardPageDisplayed();
-//		Assert.assertEquals(actual, expected);
-//	}
-//
+
 
 
 }

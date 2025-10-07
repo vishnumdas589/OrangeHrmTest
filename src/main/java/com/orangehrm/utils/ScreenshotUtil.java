@@ -30,18 +30,6 @@ public class ScreenshotUtil {
 
 
     }
-    @Deprecated
-    public String screenShot(String filename) {
-        WebDriver driver = DriverManager.getDriver();
-        String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-        String dest = System.getProperty("user.dir") + "/output/screenshots/" + filename + "_" + dateName + ".png";
-        try {
-            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(srcFile, new File(dest));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return dest;
-    }
+
 
 }

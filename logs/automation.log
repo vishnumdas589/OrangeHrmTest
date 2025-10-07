@@ -2151,3 +2151,831 @@
 [2025-10-06 16:12:28] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
 [2025-10-06 16:12:28] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
 [2025-10-06 16:12:29] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 11:11:14] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 11:11:23] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 11:11:23] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 11:11:59] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //label[normalize-space()='Employee Name']/../following-sibling::div//input' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-07 11:12:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 11:12:00] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 11:12:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 19:59:21] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 19:59:30] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 19:59:30] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 20:00:06] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //label[normalize-space()='Employee Name']/../following-sibling::div//input' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-07 20:00:37] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24669d0511fe1d14d35f92d3e66aacb4, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49404}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49404/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24669d0511fe1d14d35f92d3e66aacb4
+[2025-10-07 20:00:37] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: John
+[2025-10-07 20:00:37] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24669d0511fe1d14d35f92d3e66aacb4, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49404}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49404/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24669d0511fe1d14d35f92d3e66aacb4
+[2025-10-07 20:00:37] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details.
+[2025-10-07 20:07:59] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 20:08:07] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 20:08:07] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 20:08:36] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db25d1a754a03f5aa275ac12ae2e4cc3, findElements [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60872/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: db25d1a754a03f5aa275ac12ae2e4cc3
+[2025-10-07 20:42:39] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 20:42:45] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 20:42:45] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 20:43:21] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57411}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57411/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6078083be6c4c07eebea14653ffa6e96
+[2025-10-07 20:43:23] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 20:43:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 20:43:23] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:17:59] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:23:30] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:27:05] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:27:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:30:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:30:48] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:30:57] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:30:57] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-07 21:31:11] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:31:18] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:31:18] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:31:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:31:32] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:31:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:31:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:32:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:32:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:32:36] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55527/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 137661b5f24b25808a7601ac611cbbb5
+[2025-10-07 21:32:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:32:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:32:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:38:39] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:38:48] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:38:48] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:39:18] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row], [[ChromeDriver: chrome on windows (e9299fcf80333c7e6351ec3f7d6abdb4)] -> css selector: div.oxd-table-card div.oxd-table-row]] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58867/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9299fcf80333c7e6351ec3f7d6abdb4
+[2025-10-07 21:39:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:39:19] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:39:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:39:53] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:40:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:40:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:40:36] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51555/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91b98395803fd4294f989eebd7263538
+[2025-10-07 21:40:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:40:37] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:40:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:43:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:43:25] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:43:25] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:43:31] INFO  com.orangehrm.pages.PIMPage - 
+[2025-10-07 21:44:02] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59335}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59335/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc0528b79bda8190569a7809270f61af
+[2025-10-07 21:44:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:44:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:44:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:48:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:48:24] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:48:24] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:48:30] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 21:49:00] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52330}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52330/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fed9a0a172e4a98745382c413922939
+[2025-10-07 21:49:01] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:49:01] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:49:02] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:50:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:50:41] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:50:41] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:50:47] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 21:51:17] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56487/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0dfaec4903572e36e9be9ad47bcab84c
+[2025-10-07 21:51:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:51:19] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:51:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:51:50] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:51:56] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:51:56] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:52:02] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 21:52:32] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56888}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56888/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4196b191dc370b34f52122085842655
+[2025-10-07 21:52:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:52:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:52:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:54:53] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:55:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:55:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:55:05] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 21:55:26] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:55:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:55:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:55:38] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 21:56:08] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65055/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bda333e364722f09bfc7eb35dcca4a05
+[2025-10-07 21:56:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 21:56:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 21:56:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 21:57:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 21:57:17] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 21:57:17] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 21:57:21] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:02:44] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:02:51] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:02:51] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:02:57] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:03:27] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63121/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d07e890958adeb34ce032bf61b41d7ae
+[2025-10-07 22:03:29] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:03:29] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:03:29] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 22:06:12] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:06:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:06:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:06:25] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:09:02] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:09:09] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:09:09] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:09:14] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:09:49] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:09:55] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:09:55] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:10:00] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:10:28] INFO  com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Employee ID not found after search: bat
+[2025-10-07 22:10:29] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:10:29] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:10:29] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 22:16:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:16:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:16:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:16:58] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:17:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:17:30] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:17:30] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:17:36] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:18:24] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61840}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61840/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e680f6f1f023bc7498c163d260dc6853
+[2025-10-07 22:18:26] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:18:26] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:18:26] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 22:18:58] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:19:05] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:19:05] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:19:11] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:19:24] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe64ea15a51523be53beea45be1e5f7e, findElements [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57132/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe64ea15a51523be53beea45be1e5f7e
+[2025-10-07 22:19:29] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:19:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:19:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:19:41] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:19:59] INFO  com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Employee ID not found after search: bat
+[2025-10-07 22:20:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:20:00] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:20:01] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 22:20:36] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:20:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:20:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:20:48] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:21:07] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73507e65b22cb4085517228574e26a8d, findElements [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57350/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73507e65b22cb4085517228574e26a8d
+[2025-10-07 22:21:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:21:25] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:21:25] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:21:31] INFO  com.orangehrm.pages.PIMPage - newEmptId: 
+[2025-10-07 22:22:01] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsById] : Error in openEmployeeDetailsById: Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53962/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ed83d9ba952443d99e2be61ddc64ef9
+[2025-10-07 22:22:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:22:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:22:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 22:55:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 22:55:53] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 22:55:53] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 22:56:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 22:56:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 22:56:11] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:00:30] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:00:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:00:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:00:54] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:00:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:00:54] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:10:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:10:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:10:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:10:46] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:10:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:10:46] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:11:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:12:02] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:12:02] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:12:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:12:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:12:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:13:56] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:14:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:14:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:14:20] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:14:20] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:14:20] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:15:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:15:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:15:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:15:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:15:58] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:15:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:18:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:18:48] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:18:48] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:18:52] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:19:05] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:19:05] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:19:05] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:19:53] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:20:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:20:00] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:20:05] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:20:18] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:20:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:20:18] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:24:02] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:24:09] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:24:09] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:24:14] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:24:14] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:24:14] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:25:19] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:25:26] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:25:26] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:25:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:25:32] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:25:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:29:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:30:01] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:30:01] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:30:13] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:30:53] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:30:59] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:30:59] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:31:26] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:31:29] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:31:39] INFO  com.orangehrm.pages.PIMPage - [PIMPage][clickEditButtonForEmployee] : Employee not found: Johnny
+[2025-10-07 23:32:09] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h6[normalize-space()='Personal Details']' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-07 23:32:09] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: Johnny
+[2025-10-07 23:32:12] INFO  com.orangehrm.pages.PIMPage - [PIMPage][searchEmployeeByName] : Searched for employee name: Johnny
+[2025-10-07 23:32:12] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f00a87ee5b1f7afe8f13f9730242abd, findChildElements {value=div.oxd-table-cell, id=f.3D61571A18582711D2714C597E36C5C4.d.16047582A065BBBE3591088B7C824F79.e.1023, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53477/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f00a87ee5b1f7afe8f13f9730242abd
+[2025-10-07 23:32:12] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details.
+[2025-10-07 23:32:13] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:32:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:32:14] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:36:47] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:36:54] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:36:54] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:36:58] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-07 23:37:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:37:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:37:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:41:40] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:41:47] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:41:47] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:41:51] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-07 23:42:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:42:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:42:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:45:25] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:45:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:45:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:45:37] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Linda Anderson
+[2025-10-07 23:45:39] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:45:39] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:45:39] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:46:28] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:46:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:46:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:46:39] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-07 23:46:50] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:46:50] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:46:51] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:48:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:48:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:48:56] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-07 23:48:56] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50a0b55a3e08996abe88358dbc5267bc, findChildElements {id=f.C51B66A7A04A4F7F755C7A3F2095A365.d.AE0BAB6E95914CF54825B112F79DE336.e.61, value=div.oxd-table-cell, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51732/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50a0b55a3e08996abe88358dbc5267bc
+[2025-10-07 23:48:57] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:48:57] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:48:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-07 23:50:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:50:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:50:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:52:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-07 23:52:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-07 23:52:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-07 23:52:19] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-07 23:52:29] INFO  com.orangehrm.pages.PIMPage - [PIMPage][clickEditButtonForEmployee] : Employee not found: Johnny
+[2025-10-07 23:52:31] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-07 23:52:31] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-07 23:52:31] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 01:04:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:04:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:04:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:05:01] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: Johnny
+[2025-10-08 01:05:01] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Error communicating with the remote browser. It may have died.
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c12ee764d89e47da290a298228d0831d, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c12ee764d89e47da290a298228d0831d
+[2025-10-08 01:05:01] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for Johnny
+[2025-10-08 01:05:46] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:05:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:05:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:06:17] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: Johnny
+[2025-10-08 01:06:19] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 01:06:19] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [999201b8384df7908f148b9a8b298e2b, findChildElements {value=div.oxd-table-cell, id=f.47AD75E9BC2CF0AA19911D361207E9F8.d.FCE96F29DA7BE0BD5906A0DE9C329FC5.e.702, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63650/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 999201b8384df7908f148b9a8b298e2b
+[2025-10-08 01:06:19] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for Johnny
+[2025-10-08 01:06:32] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 01:06:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 01:06:43] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 01:06:44] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 01:07:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:07:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:07:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:08:02] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 01:08:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 01:08:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 01:08:04] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 01:08:30] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:08:35] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:08:35] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:08:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 01:08:52] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 01:08:52] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 01:09:26] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:09:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:09:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:09:43] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: Johnny
+[2025-10-08 01:09:45] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 01:09:56] INFO  com.orangehrm.pages.PIMPage - [PIMPage][clickEditButtonForEmployee] : Employee not found: Johnny
+[2025-10-08 01:10:26] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h6[normalize-space()='Personal Details']' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-08 01:10:26] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for Johnny
+[2025-10-08 01:10:52] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 01:11:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 01:11:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 01:11:03] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 01:54:30] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 01:54:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 01:54:37] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 01:54:40] INFO  com.orangehrm.pages.LeavePage - [navigateToApplyLeave]: Navigated to Apply Leave
+[2025-10-08 01:54:43] INFO  com.orangehrm.pages.LeavePage - [navigateToApplyLeave]: Navigated to Apply Leave
+[2025-10-08 01:54:44] ERROR com.orangehrm.pages.LeavePage - [selectDropdownOption] Failed to select: CAN - Personal | stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e80ceeb02d3a74d6dfff9c2771dd71f, clickElement {id=f.074DFDB511D34837353CD996AD841E82.d.355553DE35EF3C38ED741938B6C984AB.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50123/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9e80ceeb02d3a74d6dfff9c2771dd71f)] -> xpath: //label[normalize-space()='Leave Type']/../following-sibling::div//div[@class='oxd-select-text-input']]
+Session ID: 9e80ceeb02d3a74d6dfff9c2771dd71f
+[2025-10-08 01:55:14] ERROR com.orangehrm.pages.LeavePage - [applyLeave]: Failed to apply leave | Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'orangehrm-leave-balance')]/following-sibling::div/p' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-08 01:55:17] INFO  com.orangehrm.pages.LeavePage - [navigateToMyLeave]: Navigated to My Leave tab
+[2025-10-08 01:55:27] INFO  com.orangehrm.pages.LeavePage - [getLeaveTableData]: Extracted 0 rows
+[2025-10-08 01:55:30] INFO  com.orangehrm.pages.LeavePage - [navigateToAddEntitlement]: Navigated to Add Leave Entitlement
+[2025-10-08 01:55:31] INFO  com.orangehrm.pages.LeavePage - [LeavePage][selectIndividualEmployee]: Selected Individual Employee option
+[2025-10-08 01:55:32] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: CAN - Personal
+[2025-10-08 01:55:32] INFO  com.orangehrm.pages.LeavePage - [addLeaveEntitlementIndividual]: Added entitlement for Linda Anderson
+[2025-10-08 01:55:35] INFO  com.orangehrm.pages.LeavePage - [navigateToAddEntitlement]: Navigated to Add Leave Entitlement
+[2025-10-08 01:55:35] INFO  com.orangehrm.pages.LeavePage - [LeavePage][selectMultipleEmployees]: Selected Multiple Employees option
+[2025-10-08 01:55:35] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: Texas R&D
+[2025-10-08 01:55:36] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: Engineering
+[2025-10-08 01:55:36] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: CAN - Personal
+[2025-10-08 01:55:36] INFO  com.orangehrm.pages.LeavePage - [addLeaveEntitlementMultiple]: Added entitlement for type: CAN - Personal
+[2025-10-08 01:55:38] INFO  com.orangehrm.pages.LeavePage - [navigateToReports]: Navigated to Leave Entitlements and Usage Report
+[2025-10-08 01:56:08] ERROR com.orangehrm.pages.LeavePage - [generateLeaveReport]: Report generation failed | Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50123/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e80ceeb02d3a74d6dfff9c2771dd71f
+[2025-10-08 01:56:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 01:56:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 01:56:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 02:27:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 02:27:20] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 02:27:20] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 02:27:27] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 02:27:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 02:27:27] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 02:28:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 02:29:02] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 02:29:02] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 02:29:08] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 02:29:08] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 02:29:08] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 02:47:39] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 02:47:47] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 02:47:47] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 02:47:56] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: Johnny
+[2025-10-08 02:47:58] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 02:47:58] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e844aa42bda31f10e53b0170634816ad, findChildElements {id=f.06E2E70CA58C2A3BC4F8EB2D43962BF5.d.8EE878B27E692F5D5B50A621EED244BB.e.167, value=div.oxd-table-cell, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51009/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e844aa42bda31f10e53b0170634816ad
+[2025-10-08 02:47:58] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for Johnny
+[2025-10-08 02:48:23] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: Johnny
+[2025-10-08 02:48:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 02:48:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 02:48:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 02:50:15] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 02:50:22] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 02:50:22] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 03:06:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 03:06:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 03:06:39] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 03:10:32] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 03:10:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 03:10:38] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 03:11:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 03:11:16] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 03:11:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 04:54:06] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-10-08 04:54:06] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:09] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:10] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessfulLogin
+[2025-10-08 04:54:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessfulLogin
+[2025-10-08 04:54:16] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:54:17] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:54:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:18] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidPassword
+[2025-10-08 04:54:23] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidPassword
+[2025-10-08 04:54:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:54:23] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:54:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:24] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:27] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidUsername
+[2025-10-08 04:54:29] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidUsername
+[2025-10-08 04:54:29] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:54:29] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:54:30] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:31] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:33] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:54:38] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:54:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:54:38] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:54:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:39] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:54:54] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:54:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:54:54] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:54:54] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:54:55] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:54:58] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:55:19] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:55:19] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:55:19] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:55:19] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:55:20] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:55:23] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:55:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:55:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:55:24] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:55:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:55:25] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:55:28] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:55:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:55:40] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:55:40] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:55:40] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:55:41] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:55:44] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 04:55:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 04:55:55] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:55:56] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:55:56] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:55:57] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:55:59] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithEmptyCredentials
+[2025-10-08 04:56:00] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithEmptyCredentials
+[2025-10-08 04:56:00] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:56:00] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:56:00] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:56:01] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:56:04] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessLogOut
+[2025-10-08 04:56:09] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessLogOut
+[2025-10-08 04:56:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:56:09] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 04:56:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:56:14] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 04:56:14] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:56:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageElementsTest
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageElementsTest
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageTest
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageTest
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDashboardCustomization
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDashboardCustomization
+[2025-10-08 04:56:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmpDistChart
+[2025-10-08 04:56:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmpDistChart
+[2025-10-08 04:56:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyPendingLeaves
+[2025-10-08 04:56:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyPendingLeaves
+[2025-10-08 04:56:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyQuickLaunchElements
+[2025-10-08 04:56:26] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyQuickLaunchElements
+[2025-10-08 04:56:26] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyQuickLaunchElements
+[2025-10-08 04:56:27] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 04:56:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 04:56:27] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 04:56:27] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 04:56:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 04:56:32] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 04:56:32] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyAddNewEmployee
+[2025-10-08 04:56:47] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyAddNewEmployee
+[2025-10-08 04:56:48] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyAddNewEmployee
+[2025-10-08 04:56:48] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeePersonalDetails
+[2025-10-08 04:56:48] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: vishnu
+[2025-10-08 04:56:50] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: vishnu
+[2025-10-08 04:56:50] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [452d33ced24cbaf85cac578dea30615b, findChildElements {value=div.oxd-table-cell, using=css selector, id=f.107ADC1B0D47B9FE1197C48DF7EA5597.d.A9991F816B6783917E2AC72F2153D0BF.e.140}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64610}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64610/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 452d33ced24cbaf85cac578dea30615b
+[2025-10-08 04:56:50] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for vishnu
+[2025-10-08 04:56:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeePersonalDetails
+[2025-10-08 04:56:50] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeePersonalDetails
+[2025-10-08 04:56:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeJobDetails
+[2025-10-08 05:03:21] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-10-08 05:03:21] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:03:23] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:03:27] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessfulLogin
+[2025-10-08 05:03:31] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessfulLogin
+[2025-10-08 05:03:31] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:03:31] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:03:31] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:03:32] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:03:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidPassword
+[2025-10-08 05:03:38] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidPassword
+[2025-10-08 05:03:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:03:38] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:03:38] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:03:39] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:03:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidUsername
+[2025-10-08 05:03:44] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidUsername
+[2025-10-08 05:03:44] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:03:44] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:03:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:03:46] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:03:49] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:03:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:03:55] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:03:55] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:03:55] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:03:56] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:03:59] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:04:10] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:04:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:04:11] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:04:11] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:04:11] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:04:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:04:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:04:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:04:35] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:04:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:04:36] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:04:37] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:04:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:04:40] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:04:40] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:04:40] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:04:41] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:04:44] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:04:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:04:55] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:04:55] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:04:55] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:04:56] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:04:59] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-08 05:05:10] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-08 05:05:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:05:11] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:05:11] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:05:11] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:05:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithEmptyCredentials
+[2025-10-08 05:05:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithEmptyCredentials
+[2025-10-08 05:05:15] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:05:15] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:05:15] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:05:16] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:05:19] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessLogOut
+[2025-10-08 05:05:24] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessLogOut
+[2025-10-08 05:05:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:05:24] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-08 05:05:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:05:28] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 05:05:28] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:05:28] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageElementsTest
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageElementsTest
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageTest
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageTest
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDashboardCustomization
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDashboardCustomization
+[2025-10-08 05:05:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmpDistChart
+[2025-10-08 05:05:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmpDistChart
+[2025-10-08 05:05:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyPendingLeaves
+[2025-10-08 05:05:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyPendingLeaves
+[2025-10-08 05:05:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyQuickLaunchElements
+[2025-10-08 05:05:41] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyQuickLaunchElements
+[2025-10-08 05:05:41] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyQuickLaunchElements
+[2025-10-08 05:05:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 05:05:43] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:05:43] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 05:05:43] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:05:51] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 05:05:51] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:05:51] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyAddNewEmployee
+[2025-10-08 05:05:59] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyAddNewEmployee
+[2025-10-08 05:05:59] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeePersonalDetails
+[2025-10-08 05:05:59] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: vishnu
+[2025-10-08 05:06:01] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: vishnu
+[2025-10-08 05:06:12] INFO  com.orangehrm.pages.PIMPage - [PIMPage][clickEditButtonForEmployee] : Employee not found: vishnu
+[2025-10-08 05:06:42] ERROR com.orangehrm.pages.PIMPage - [PIMPage][openEmployeeDetailsByName] : Error in openEmployeeDetailsByName: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h6[normalize-space()='Personal Details']' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-08 05:06:42] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for vishnu
+[2025-10-08 05:06:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeePersonalDetails
+[2025-10-08 05:06:42] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeePersonalDetails
+[2025-10-08 05:06:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeJobDetails
+[2025-10-08 05:06:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeeJobDetails
+[2025-10-08 05:06:53] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeeJobDetails
+[2025-10-08 05:06:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeeListView
+[2025-10-08 05:06:53] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeeListView
+[2025-10-08 05:06:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeSearch
+[2025-10-08 05:06:55] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: vishnu
+[2025-10-08 05:07:05] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmployeeSearch
+[2025-10-08 05:07:07] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 05:07:07] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:07:07] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 05:07:07] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:07:12] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 05:07:12] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:07:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyAddUser
+[2025-10-08 05:07:47] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyAddUser
+[2025-10-08 05:07:48] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyAddUser
+[2025-10-08 05:07:48] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyJobTitle
+[2025-10-08 05:08:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyJobTitle
+[2025-10-08 05:08:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyPayGrade
+[2025-10-08 05:08:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyPayGrade
+[2025-10-08 05:08:56] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyPayGrade
+[2025-10-08 05:08:56] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmploymentStatus
+[2025-10-08 05:09:02] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmploymentStatus
+[2025-10-08 05:09:02] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-08 05:09:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyOrganizationStructure
+[2025-10-08 05:09:15] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyOrganizationStructure
+[2025-10-08 05:09:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 05:09:16] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:09:16] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 05:09:16] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-08 05:09:22] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-08 05:09:22] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-08 05:09:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyApplyLeaveFunctionality
+[2025-10-08 05:09:26] INFO  com.orangehrm.pages.LeavePage - [navigateToApplyLeave]: Navigated to Apply Leave
+[2025-10-08 05:09:28] INFO  com.orangehrm.pages.LeavePage - [navigateToApplyLeave]: Navigated to Apply Leave
+[2025-10-08 05:09:29] ERROR com.orangehrm.pages.LeavePage - [selectDropdownOption] Failed to select: CAN - Personal | stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [afb5cbcdc34fa42af9180f68cbdafeae, clickElement {id=f.B2678CE47A0A504AAC8351BE32877009.d.E6AD232C49784F268839FE6DB44E4DE2.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61175/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (afb5cbcdc34fa42af9180f68cbdafeae)] -> xpath: //label[normalize-space()='Leave Type']/../following-sibling::div//div[@class='oxd-select-text-input']]
+Session ID: afb5cbcdc34fa42af9180f68cbdafeae
+[2025-10-08 05:10:00] ERROR com.orangehrm.pages.LeavePage - [applyLeave]: Failed to apply leave | Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'orangehrm-leave-balance')]/following-sibling::div/p' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-08 05:10:00] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyApplyLeaveFunctionality
+[2025-10-08 05:10:00] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyMyLeaveList
+[2025-10-08 05:10:02] INFO  com.orangehrm.pages.LeavePage - [navigateToMyLeave]: Navigated to My Leave tab
+[2025-10-08 05:10:13] INFO  com.orangehrm.pages.LeavePage - [getLeaveTableData]: Extracted 0 rows
+[2025-10-08 05:10:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyMyLeaveList
+[2025-10-08 05:10:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLeaveEntitlementIndividual
+[2025-10-08 05:10:15] INFO  com.orangehrm.pages.LeavePage - [navigateToAddEntitlement]: Navigated to Add Leave Entitlement
+[2025-10-08 05:10:16] INFO  com.orangehrm.pages.LeavePage - [LeavePage][selectIndividualEmployee]: Selected Individual Employee option
+[2025-10-08 05:10:17] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: CAN - Personal
+[2025-10-08 05:10:17] INFO  com.orangehrm.pages.LeavePage - [addLeaveEntitlementIndividual]: Added entitlement for Linda Anderson
+[2025-10-08 05:10:17] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLeaveEntitlementIndividual
+[2025-10-08 05:10:17] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLeaveEntitlementMultiple
+[2025-10-08 05:10:20] INFO  com.orangehrm.pages.LeavePage - [navigateToAddEntitlement]: Navigated to Add Leave Entitlement
+[2025-10-08 05:10:20] INFO  com.orangehrm.pages.LeavePage - [LeavePage][selectMultipleEmployees]: Selected Multiple Employees option
+[2025-10-08 05:10:21] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: Texas R&D
+[2025-10-08 05:10:21] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: Engineering
+[2025-10-08 05:10:21] INFO  com.orangehrm.pages.LeavePage - [selectDropdownOption] Selected option: CAN - Personal
+[2025-10-08 05:10:21] INFO  com.orangehrm.pages.LeavePage - [addLeaveEntitlementMultiple]: Added entitlement for type: CAN - Personal
+[2025-10-08 05:10:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLeaveEntitlementMultiple
+[2025-10-08 05:10:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLeaveReports
+[2025-10-08 05:10:23] INFO  com.orangehrm.pages.LeavePage - [navigateToReports]: Navigated to Leave Entitlements and Usage Report
+[2025-10-08 05:10:54] ERROR com.orangehrm.pages.LeavePage - [generateLeaveReport]: Report generation failed | Expected condition failed: waiting for visibility of all [] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.54, chrome: {chromedriverVersion: 141.0.7390.54 (b95610d5c4a5..., userDataDir: C:\Users\vishn\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61175/devtoo..., se:cdpVersion: 141.0.7390.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afb5cbcdc34fa42af9180f68cbdafeae
+[2025-10-08 05:10:54] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyLeaveReports
+[2025-10-08 05:10:54] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyLeaveReports
+[2025-10-08 05:10:56] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: logged out of  DashBoardPage 
+[2025-10-08 05:10:56] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-08 05:10:56] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-08 05:10:56] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
