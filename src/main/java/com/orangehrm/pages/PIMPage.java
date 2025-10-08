@@ -58,7 +58,7 @@ public class PIMPage extends BasePage{
 	private WebElement dropDownJobCategory;
 	@FindBy(xpath = "//label[normalize-space()='Employment Status']/../following-sibling::div//div[@class='oxd-select-text-input']")
 	private WebElement dropDownEmploymentStatus;
-	@FindBy(xpath = "//p[normalize-space()='Include Employment Contract Details']//following-sibling::div//input")
+	@FindBy(xpath = "//p[normalize-space()='Include Employment Contract Details']//following-sibling::div//span")
 	private WebElement toggleBtnEmpContractDetails;
 	@FindBy(xpath = "//label[normalize-space()='Contract Start Date']/../following-sibling::div//input[@placeholder='yyyy-dd-mm']")
 	private WebElement txtEmpContractStartDate;
@@ -210,14 +210,15 @@ public class PIMPage extends BasePage{
 		navigateToPimPage();
 		wait.until(ExpectedConditions.visibilityOf(txtSearchEmpName)).clear();
 		txtSearchEmpName.sendKeys(empName);
-		wait.until(ExpectedConditions.elementToBeClickable(btnSearch)).click();
-
+		btnSearch.click();
+//		wait.until(ExpectedConditions.elementToBeClickable(btnSearch)).click();
 		// Wait for new rows to load after search
 		By rowsLocator = By.cssSelector("div.oxd-table-card div.oxd-table-row");
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(rowsLocator));
 
 		logger.info("[searchEmployeeByName]: Searched for employee name: " + empName);
 	}
+
 	public boolean isEmployeePresentInTable(String employeeName) {
 		List<Map<String, WebElement>> rows = getEmployeeTableData();
 
@@ -348,63 +349,22 @@ public class PIMPage extends BasePage{
 			return false;
 		}
 	}
-//	public boolean verifyEmployeeJobDetails(String employeeName) {
-//		try {
-//			logger.info("[PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: " + employeeName);
-//
-//			// Navigate to employee record
-//			if (!openEmployeeDetailsByName(employeeName)) {
-//				logger.error("[PIMPage][verifyEmployeeJobDetails] : Unable to open employee details.");
-//				return false;
-//			}
-//
-//			// Click the Job tab
-//			wait.until(ExpectedConditions.elementToBeClickable(tabJob)).click();
-//			wait.until(ExpectedConditions.visibilityOf(labelJobDetails));
-//
-//			// Verify job details elements are displayed
-//			boolean allDisplayed = dropdownSearchEmpJobTitle.isDisplayed()
-//					&& dropDownEmploymentStatus.isDisplayed()
-//					&& dropDownJobCategory.isDisplayed()
-//					&& dropdownSearchEmpSubUnit.isDisplayed();
-//
-//			if (allDisplayed) {
-//				logger.info("[PIMPage][verifyEmployeeJobDetails] : All job fields displayed successfully for " + employeeName);
-//				return true;
-//			} else {
-//				logger.warn("[PIMPage][verifyEmployeeJobDetails] : One or more job fields not visible.");
-//				return false;
-//			}
-//
-//		} catch (Exception e) {
-//			logger.error("[PIMPage][verifyEmployeeJobDetails] : Exception during verification: " + e.getMessage());
-//			return false;
-//		}
-//	}
+
 	public boolean verifyEmployeeJobDetails(String employeeName) {
 		try {
 			logger.info("[PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: " + employeeName);
 
-			// Step 1: Open employee record by name
-			if (!openEmployeeDetailsByName(employeeName)) {
-				logger.error("[PIMPage][verifyEmployeeJobDetails] : Unable to open employee details for " + employeeName);
-				return false;
-			}
-
-			// Step 2: Navigate to Job tab
-			wait.until(ExpectedConditions.elementToBeClickable(tabJob)).click();
-			wait.until(ExpectedConditions.visibilityOf(labelJobDetails));
-
-			// Step 3: Verify essential Job Details fields
-			boolean allDisplayed =
+			boolean baseDetail =
 					dropdownSearchEmpJobTitle.isDisplayed() &&
 							dropDownEmploymentStatus.isDisplayed() &&
 							dropDownJobCategory.isDisplayed() &&
-							dropdownSearchEmpSubUnit.isDisplayed() &&
-							txtEmpContractStartDate.isDisplayed() &&
-							txtEmpContractEndDate.isDisplayed() &&
-							btnTerminateEmployment.isDisplayed();
-
+							dropdownSearchEmpSubUnit.isDisplayed()&&
+							toggleBtnEmpContractDetails.isDisplayed();;
+			toggleBtnEmpContractDetails.click();
+			boolean contractDetails = txtEmpContractStartDate.isDisplayed() &&
+					txtEmpContractEndDate.isDisplayed() &&
+					btnTerminateEmployment.isDisplayed();
+			boolean allDisplayed = baseDetail && contractDetails;
 			if (allDisplayed) {
 				logger.info("[PIMPage][verifyEmployeeJobDetails] : All job detail fields displayed successfully for " + employeeName);
 				return true;

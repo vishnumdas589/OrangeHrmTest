@@ -35,8 +35,25 @@ public class PIMTests extends BasePageTest{
 				"[Add Employee] Failed to open personal details page for new employee."
 		);
 	}
+	@Test(priority = 2,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee personal details")
+	public void verifyEmployeePersonalDetails(Map<String, String> data) {
+		boolean personalDetailsVerified = pimPage.verifyEmployeePersonalDetails(data.get("firstname"));
+		Assert.assertTrue(personalDetailsVerified, "[Personal Details] Unable to open personal details page.");
+	}
 
-	@Test(priority = 4,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee list view")
+	@Test(priority =3,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee job details")
+	public void verifyEmployeeJobDetails(Map<String, String> data) {
+		pimPage.navigateToJobs();
+		boolean jobVerified = pimPage.verifyEmployeeJobDetails(data.get("firstname"));
+		Assert.assertTrue(jobVerified, "[Job Details] Job details verification failed.");
+	}
+	@Test(priority = 4,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee search functionality")
+	public void verifyEmployeeSearch(Map<String, String> data) {
+		pimPage.searchEmployeeByName(data.get("firstname"));
+		Assert.assertTrue(pimPage.isEmployeePresentInTable(data.get("firstname")),
+				"[Search] Employee not found in search results.");
+	}
+	@Test(priority = 5, description = "Verify employee list view")
 	public void verifyEmployeeListView() {
 		pimPage.navigateToPimPage();
 		List<Map<String, WebElement>> tableData = pimPage.getEmployeeTableData();
@@ -50,27 +67,11 @@ public class PIMTests extends BasePageTest{
 		);
 	}
 
-	@Test(priority = 5,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee search functionality")
-	public void verifyEmployeeSearch(Map<String, String> data) {
-		pimPage.searchEmployeeByName(data.get("firstname"));
-		Assert.assertTrue(pimPage.isEmployeePresentInTable(data.get("firstname")),
-				"[Search] Employee not found in search results.");
-	}
 
 
 
-	@Test(priority = 2,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee personal details")
-	public void verifyEmployeePersonalDetails(Map<String, String> data) {
-		boolean personalDetailsVerified = pimPage.verifyEmployeeJobDetails(data.get("firstname"));
-		Assert.assertTrue(personalDetailsVerified, "[Personal Details] Unable to open personal details page.");
-	}
 
-	@Test(priority =3,dataProvider = "adminDataMap", dataProviderClass = DataProviders.class, description = "Verify employee job details")
-	public void verifyEmployeeJobDetails(Map<String, String> data) {
-		pimPage.navigateToJobs();
-		boolean jobVerified = pimPage.verifyEmployeeJobDetails(data.get("firstname"));
-		Assert.assertTrue(jobVerified, "[Job Details] Job details verification failed.");
-	}
+
 
 
 	

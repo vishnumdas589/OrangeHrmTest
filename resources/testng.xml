@@ -4,7 +4,7 @@
 		<listener class-name="com.orangehrm.listeners.Listener" />
 	</listeners>
 	<parameter name="browser" value="chrome" />
-	<test thread-count="5" name="LoginTests">
+	<test thread-count="5" name="Regression">
 		<classes>
 			<class name="com.orangehrm.tests.LoginTests" />
 			<class name="com.orangehrm.tests.DashBoardTests" />

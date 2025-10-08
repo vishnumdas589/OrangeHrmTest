@@ -4,9 +4,11 @@
 		<listener class-name="com.orangehrm.listeners.Listener" />
 	</listeners>
 	<parameter name="browser" value="chrome" />
-	<test name="LoginTests">
+	<test name="dataDrivenTests">
 		<classes>
 			<class name="com.orangehrm.tests.LoginTests" />
+			<class name="com.orangehrm.tests.PIMTests"/>
+			<class name="com.orangehrm.tests.AdminTests"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
