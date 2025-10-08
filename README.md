@@ -48,20 +48,9 @@ OrangeHrmTest/
 - **Configurable Execution** – environment URLs, waits, credentials all from `Config.properties`  
 
 ---
-graph TD
-    A[TestNG XML <br/> (testng.xml / cross-browser.xml / data-driven.xml)]
-      --> B[BasePageTest <br/> (Driver setup, Login, Suite Init)]
-      --> C[Page Object Layer <br/> (AdminPage, PIMPage, LeavePage, LoginPage)]
-      --> D[Utilities Layer <br/> (DriverManager, ConfigReader, ExcelReader, LoggerManager)]
-      --> E[Output Layer <br/> (ExtentReport.html, Logs, Screenshots)]
 
-    style A fill:#4c8bf5,stroke:#fff,color:#fff
-    style B fill:#4285f4,stroke:#fff,color:#fff
-    style C fill:#34a853,stroke:#fff,color:#fff
-    style D fill:#fbbc04,stroke:#fff,color:#000
-    style E fill:#ea4335,stroke:#fff,color:#fff
 
-⚙️ Execution Flow (Step-by-Step)
+⚙️ **Execution Flow (Step-by-Step)**
 
 1️⃣ TestNG XML
 
@@ -126,7 +115,9 @@ logs/ for runtime log output.
 
 All results consolidated under /output/.
 
-🔧 Future Enhancements
+
+
+🔧 **Future Enhancements**
 
 CI/CD pipeline (GitHub Actions / Jenkins)
 
