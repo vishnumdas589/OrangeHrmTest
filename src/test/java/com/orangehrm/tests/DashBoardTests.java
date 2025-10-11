@@ -1,27 +1,28 @@
 
 package com.orangehrm.tests;
-
-import com.orangehrm.Base.LoginBaseTest;
-import com.orangehrm.data.DataProviders;
-import com.orangehrm.pages.DashboardPage;
-import com.orangehrm.pages.LoginPage;
+import com.orangehrm.managers.DriverManager;
 import com.orangehrm.utils.ConfigReader;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-
 import com.orangehrm.Base.BasePageTest;
-import com.orangehrm.managers.DriverManager;
 import com.orangehrm.managers.LoggerManager;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class DashBoardTests extends BasePageTest {
 	private static final Logger logger = LoggerManager.getLogger(DashBoardTests.class);
+	@BeforeMethod
+	public void beforeMethod() {
+		if(DriverManager.getDriver().getCurrentUrl().trim().equalsIgnoreCase(ConfigReader.getLoginURL())){
+			loginPg.loginWithCredentials(ConfigReader.getDefaultUserName(), ConfigReader.getDefaultPassword());
+		}
+	}
+	@AfterMethod
+	public void afterMethod() {
+		dashboardPg.logout();
+	}
 
 	@Test
 	public void dashBoardPageTest() {
@@ -38,12 +39,12 @@ public class DashBoardTests extends BasePageTest {
 		Assert.assertEquals(dashboardPg.getQuickLaunchButtonsCount(),6);
 		Assert.assertTrue(dashboardPg.isAllQuickLaunchButtonsDisplayed());
 		SoftAssert softAssert = new SoftAssert();
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickAssignLeave(),ConfigReader.getAssignLeaveURL());
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeaveList(),ConfigReader.getLeaveListURL());
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickTimesheets(),ConfigReader.getEmployeeTimesheetURL());
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickApplyLeave(),ConfigReader.getApplyLeaveURL());
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyLeave(),ConfigReader.getMyLeaveListURL());
-		softAssert.assertEquals(dashboardPg.getRedirectUrlOnBtnclickMyTimesheet(),ConfigReader.getMyTimesheetURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnAssignLeave()),ConfigReader.getAssignLeaveURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnLeaveList()),ConfigReader.getLeaveListURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnTimesheets()),ConfigReader.getEmployeeTimesheetURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnApplyLeave()),ConfigReader.getApplyLeaveURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnMyLeave()),ConfigReader.getMyLeaveListURL());
+		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnMyTimesheet()),ConfigReader.getMyTimesheetURL());
 		softAssert.assertAll();
 	}
 	@Test
@@ -60,10 +61,10 @@ public class DashBoardTests extends BasePageTest {
 		}
 		softAssert.assertAll();
 	}
-	@Test
-	public void verifyPendingLeaves(){
-		Assert.assertTrue(true);
-	}
+//	@Test
+//	public void verifyPendingLeaves(){
+//		Assert.assertTrue(true);
+//	}
 
 	@Test
 	public void verifyDashboardCustomization() {

@@ -27,8 +27,10 @@ public class BasePageTest {
 
 	    @AfterClass// CHANGE: use @AfterMethod instead of @AfterTest
 	    public void tearDown() {
-	        dashboardPg.logout();
-	        logger.info("[LoginBasePage AfterClass]: logged out of  DashBoardPage ");
+			if(DriverManager.getDriver().getCurrentUrl().contains("dashboard")) {
+				dashboardPg.logout();
+				logger.info("[LoginBasePage AfterClass]: logged out of  DashBoardPage ");
+			}
 
 	        DriverManager.quitDriver();
 	        logger.info("[LoginBasePage AfterClass]: Exited driver ");

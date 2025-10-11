@@ -1,4 +1,5 @@
 package com.orangehrm.tests;
+import com.orangehrm.data.DataProviders;
 import org.apache.logging.log4j.Logger;
 
 import com.orangehrm.Base.BasePageTest;
@@ -22,15 +23,14 @@ public class LeaveTests extends BasePageTest {
 		leavePg = new LeavePage();
 	}
 
-	@Test(priority = 1, description = "Verify apply leave functionality")
-	public void verifyApplyLeaveFunctionality() {
+	@Test(priority = 1,dataProvider = "LeaveDataMap",dataProviderClass = DataProviders.class, description = "Verify apply leave functionality")
+	public void verifyApplyLeaveFunctionality(Map<String,String>tableData) {
 		leavePg.navigateToApplyLeave();
-		leavePg.applyLeave("CAN - Personal", "2025-10-08", "2025-10-09", "Applying for personal leave");
-
-		Assert.assertTrue(true, "Leave application should complete without error.");
+		boolean iseaveApplyed =leavePg.applyLeave(tableData);
+		Assert.assertTrue(iseaveApplyed, "Leave application should complete without error.");
 	}
 
-	@Test(priority = 2, description = "Verify my leave list view")
+	@Test(priority = 2,dataProvider = "LeaveDataMap",dataProviderClass = DataProviders.class, description = "Verify my leave list view")
 	public void verifyMyLeaveList() {
 		leavePg.navigateToMyLeave();
 		List<Map<String, WebElement>> tableData = leavePg.getLeaveTableData();
@@ -39,17 +39,19 @@ public class LeaveTests extends BasePageTest {
 		Assert.assertTrue(tableData.size() >= 0, "Leave list should load successfully.");
 	}
 
-	@Test(priority = 3, description = "Verify leave entitlements for individual employee")
-	public void verifyLeaveEntitlementIndividual() {
-		leavePg.addLeaveEntitlementIndividual("Linda Anderson", "CAN - Personal", "12");
-		Assert.assertTrue(true, "Individual employee entitlement added successfully.");
+	@Test(priority = 3,dataProvider = "LeaveDataMap",dataProviderClass = DataProviders.class, description = "Verify leave entitlements for individual employee")
+	public void verifyLeaveEntitlementIndividual(Map<String, String> tableData) {
+		boolean isverified = leavePg.addLeaveEntitlementIndividual(tableData);
+		Assert.assertTrue(isverified, "Individual employee entitlement added successfully.");
 	}
 
-	@Test(priority = 4, description = "Verify leave entitlements for multiple employees")
-	public void verifyLeaveEntitlementMultiple() {
-		leavePg.addLeaveEntitlementMultiple("Texas R&D", "Engineering", "CAN - Personal", "10");
-		Assert.assertTrue(true, "Multiple employee entitlement added successfully.");
+	@Test(priority = 4,dataProvider = "LeaveDataMap",dataProviderClass = DataProviders.class, description = "Verify leave entitlements for multiple employees")
+	public void verifyLeaveEntitlementMultiple(Map<String, String> tableData) {
+//		leavePg.addLeaveEntitlementMultiple("Texas R&D", "Engineering", "CAN - Personal", "10");
+		boolean isVerified = leavePg.addLeaveEntitlementMultiple(tableData);
+		Assert.assertTrue(isVerified, "Multiple employee entitlement added successfully.");
 	}
+
 
 	@Test(priority = 5, description = "Verify leave reports generation")
 	public void verifyLeaveReports() {

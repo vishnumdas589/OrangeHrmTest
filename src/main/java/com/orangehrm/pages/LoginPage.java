@@ -31,8 +31,16 @@ public class LoginPage extends BasePage  {
 	WebElement alertPasswordRequired;
 	@FindBy(xpath = "//h5[text()='Login']")
 	WebElement labelLogin;
-	
-	
+
+
+	public WebElement getTxtUsername() {
+		return txtUsername;
+	}
+
+	public WebElement getTxtPassword() {
+		return txtPassword;
+	}
+
 	public void setUsername(String username) {
 		txtUsername.sendKeys(username);
 	}
@@ -47,8 +55,8 @@ public class LoginPage extends BasePage  {
 		return labelLogin.isDisplayed();
 	}
 	public void loginWithCredentials(String username,String password){
-		
-		wait.until(ExpectedConditions.visibilityOf(txtUsername));
+
+		waitUntilVisibility(getTxtUsername());
 		clearUsername();
 		setUsername(username);
 		clearPassword();

@@ -52,6 +52,12 @@ public class DataProviders {
 
         return data;
     }
+    @DataProvider(name = "orgStructureDataSet")
+    public Object[][] getOrgStructureDataSet() {
+        System.out.println(EXCEL_PATH);
+        ExcelReader reader = new ExcelReader(EXCEL_PATH);
+        return reader.getdataAsString(ConfigReader.getOrgStructureData() );
+    }
 
 
     // 3. Full row as a Map<String,String> (key=column name, value=cell value)
@@ -67,17 +73,20 @@ public class DataProviders {
         }
         return data;
     }
+
     @DataProvider(name = "adminDataMap")
     public Object[][] getAdminDataMap() {
         System.out.println(EXCEL_PATH);
         ExcelReader reader = new ExcelReader(EXCEL_PATH);
-        List<Map<String, String>> list = reader.getDataAsMap(ConfigReader.getSheetAdminData());
+        return reader.getObjOfMap(ConfigReader.getSheetAdminData());
+    }
 
-        Object[][] data = new Object[list.size()][1];
-        for (int i = 0; i < list.size(); i++) {
-            data[i][0] = list.get(i);
-        }
-        return data;
+    @DataProvider(name = "LeaveDataMap")
+    public Object[][] getLeaveDataMap() {
+        System.out.println(EXCEL_PATH);
+        ExcelReader reader = new ExcelReader(EXCEL_PATH);
+        return reader.getObjOfMap(ConfigReader.getLeaveData());
+
     }
 
 }

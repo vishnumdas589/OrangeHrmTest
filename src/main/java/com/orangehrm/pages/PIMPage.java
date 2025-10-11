@@ -128,7 +128,7 @@ public class PIMPage extends BasePage{
 	public void navigateToJobs(){
 		tabJob.click();
 	}
-	public void createEmployee(String firstname, String lastname, String username, String password) throws InterruptedException {
+	public void createEmployee(String firstname, String lastname, String username, String password) {
 		navigateToPimPage();
 		btnAdd.click();
 		wait.until(ExpectedConditions.visibilityOf(txtEmpFirstName));

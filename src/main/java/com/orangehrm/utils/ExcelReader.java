@@ -63,6 +63,38 @@ public class ExcelReader {
 	}
 
 	// ✅ 3. Return List of Maps (key = column name, value = cell value)
+	public Object[][] getObjOfMap(String sheetName) {
+        List<Map<String, String>> allData = new ArrayList<>();
+        Object[][] data;
+        try (FileInputStream fi = new FileInputStream(path);
+             XSSFWorkbook wb = new XSSFWorkbook(fi)) {
+
+            XSSFSheet sh = wb.getSheet(sheetName);
+            DataFormatter formatter = new DataFormatter();
+
+            XSSFRow headerRow = sh.getRow(0);
+            int colCount = headerRow.getLastCellNum();
+            int rowCount = sh.getLastRowNum(); // excludes header
+            data = new Object[rowCount][1];
+//			for (int i = 0; i < list.size(); i++) {
+//				data[i][0] = list.get(i);
+//			}
+//			return data;
+            for (int i = 1; i <= sh.getLastRowNum(); i++) {
+                XSSFRow row = sh.getRow(i);
+                Map<String, String> dataMap = new HashMap<>();
+                for (int j = 0; j < colCount; j++) {
+                    String key = formatter.formatCellValue(headerRow.getCell(j));
+                    String value = formatter.formatCellValue(row.getCell(j));
+                    dataMap.put(key, value);
+                }
+                data[i - 1][0] = dataMap;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Error reading Excel data: " + e.getMessage(), e);
+        }
+        return data;
+    }
 	public List<Map<String, String>> getDataAsMap(String sheetName) {
 		List<Map<String, String>> allData = new ArrayList<>();
 		try (FileInputStream fi = new FileInputStream(path);
@@ -107,5 +139,26 @@ public class ExcelReader {
 			throw new RuntimeException("Error reading Dashboard labels using Excel reader: " + e.getMessage(), e);
 		}
 		return set;
+	}
+	public Object [][] getdataAsString(String sheetName) {
+		HashSet<String > set = new HashSet<>();
+		try (FileInputStream fi = new FileInputStream(path);
+			 XSSFWorkbook wb = new XSSFWorkbook(fi)) {
+
+			XSSFSheet sh = wb.getSheet(sheetName);
+			DataFormatter formatter = new DataFormatter();
+
+			Object [][] data = new Object[sh.getLastRowNum()][sh.getRow(0).getLastCellNum()];
+			for (int i = 1; i <= sh.getLastRowNum(); i++) { // skip header
+				XSSFRow row = sh.getRow(i);
+				XSSFCell cell = row.getCell(0);
+				data[i - 1][0] = formatter.formatCellValue(cell);
+//				formatter.formatCellValue(row.getCell(0));
+			}
+			return data;
+		} catch (IOException e) {
+			throw new RuntimeException("Error reading Dashboard labels using Excel reader: " + e.getMessage(), e);
+		}
+
 	}
 }

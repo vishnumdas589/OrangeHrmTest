@@ -11,7 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class AdminPage extends BasePage {
 	private static final Logger logger = LoggerManager.getLogger(AdminPage.class);
@@ -58,6 +61,10 @@ public class AdminPage extends BasePage {
 
 	@FindBy(xpath = "//button[normalize-space()='Save']")
 	private WebElement btnSave;
+	@FindBy(xpath = "//h6[contains(.,'Add Currency')]/..//div[@class='oxd-form-actions']/button[normalize-space()='Save']")
+	private WebElement btnSaveAddCurrency;
+	@FindBy(xpath = "//h6[contains(.,'Edit Pay Grade')]/..//div[@class='oxd-form-actions']/button[normalize-space()='Save']")
+	private WebElement btnSaveEditPayGrade;
 
 	// ---------- INPUTS ----------
 	@FindBy(xpath = "//label[normalize-space()='Username']/../following-sibling::div//input")
@@ -68,19 +75,36 @@ public class AdminPage extends BasePage {
 
 	@FindBy(xpath = "//div[contains(@class,'oxd-input-field-bottom-space')]//input")
 	private WebElement txtNameInput;
+	@FindBy(xpath = "//textarea[@placeholder='Type description here']")
+	private WebElement txtDescription;
+
+	@FindBy(xpath = "//ul[@class='oxd-tree-node-child']//button[@type='button']")
+	private List<WebElement> btnsContainerOrgTreeExpand;
+	@FindBy(xpath =  "//div[@class='oxd-tree-node-content']")
+	private List<WebElement>  treeNodes;
 
 	// ---------- LOCATORS ----------
 	private final By systemUsersHeader = By.xpath("//h5[normalize-space()='System Users']");
 	private final By listTableBody = By.xpath("//div[@role='table']//div[@role='rowgroup']");
 	private final By listNoRecords = By.xpath("//span[contains(.,'No Records Found')]");
 	private final By spinner = By.xpath("//div[contains(@class,'oxd-loading-spinner')]");
-	private final By toast = By.cssSelector("div.oxd-toast");
 
 	public AdminPage() {
 		super();
 	}
 
+	public Set<String> getActualOrgNameList(){
+		expandTree();
+		return treeNodes.stream().map(WebElement::getText).collect(Collectors.toSet());
+	}
+	public void expandTree(){
+		btnsContainerOrgTreeExpand.stream().iterator().forEachRemaining(btn -> {btn.click();});
+	}
 
+	public boolean validateExpectedElementExistInOrgStructure(String  ExpectedValue){
+		navigateToOrganizationStructure();
+		return getActualOrgNameList().contains(ExpectedValue);
+	}
 	public void openAdminModule() {
 		wait.until(ExpectedConditions.elementToBeClickable(menuAdmin)).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(systemUsersHeader));
@@ -123,14 +147,7 @@ public class AdminPage extends BasePage {
 		btnAdd.click();
 		selectDropdownByLabel("User Role", userRole);
 
-		txtEmployeeName.sendKeys(empName);
-		try {
-			By suggestionItem = By.xpath("//div[@role='listbox']//div[@role='option'][1]");
-			wait.until(ExpectedConditions.elementToBeClickable(suggestionItem)).click();
-		} catch (TimeoutException e) {
-			logger.error("Employee autocomplete not found for " + empName);
-			return false;
-		}
+		enterEmployeeName(empName);
 
 		selectDropdownByLabel("Status", status);
 		txtUsername.sendKeys(username);
@@ -143,6 +160,30 @@ public class AdminPage extends BasePage {
 		btnSave.click();
 		return isToastDisplayed("Successfully Saved") || searchUser(username);
 	}
+	public void enterEmployeeName(String empName) {
+		try {
+			txtEmployeeName.clear();
+			txtEmployeeName.sendKeys(empName);
+
+			// Wait for AJAX dropdown to appear (listbox)
+			By suggestionList = By.xpath("//div[@role='listbox']");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(suggestionList));
+//			By optionByName = By.xpath("//div[@role='listbox']//div[@role='option'][contains(.,'" + empName + "')]");
+
+			// Now click the first suggestion that matches the text
+			By firstOption = By.xpath("//div[@role='listbox']//div[@role='option'][1]");
+			By optionByName = By.xpath("//div[@role='listbox']//div[@role='option'][contains(.,'"+ empName+"')]");
+			List<WebElement> matching  = DriverManager.getDriver().findElements(optionByName);
+			WebElement clickableOption = !matching.isEmpty() ? matching.get(0) : wait.until(ExpectedConditions.visibilityOfElementLocated(firstOption));
+
+			clickableOption.click();
+
+		} catch (TimeoutException e) {
+			logger.error("Employee autocomplete suggestions not found for: {}", empName);
+			throw new RuntimeException("Employee name autocomplete failed — check if employee exists", e);
+		}
+	}
+
 
 	public boolean searchUser(String username) {
 		WebElement searchUsername = driver.findElement(By.xpath("//label[normalize-space()='Username']/../following-sibling::div//input"));
@@ -157,8 +198,7 @@ public class AdminPage extends BasePage {
 		navigateToJobSubMenu("Job Titles");
 		btnAdd.click();
 		txtNameInput.sendKeys(data.getOrDefault("jobTitle", ""));
-		WebElement description = driver.findElement(By.xpath("//textarea[@placeholder='Type description here']"));
-		description.sendKeys(data.getOrDefault("jobDescription", ""));
+		txtDescription.sendKeys(data.getOrDefault("jobDescription", ""));
 		btnSave.click();
 		return isToastDisplayed("Successfully Saved") || verifyJobTitle(data.get("jobTitle"));
 	}
@@ -175,17 +215,22 @@ public class AdminPage extends BasePage {
 		btnSave.click();
 		isToastDisplayed("Successfully Saved");
 
-		By rowByName = By.xpath("//div[@role='rowgroup']//div[@role='row'][.//div[normalize-space()='" + data.get("payGrade") + "']]");
-		wait.until(ExpectedConditions.elementToBeClickable(rowByName)).click();
-
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Add Currency']"))).click();
-		selectDropdownByLabel("Currency", data.getOrDefault("currency", ""));
+//		By rowByName = By.xpath("//div[@role='rowgroup']//div[@role='row'][.//div[normalize-space()='" + data.get("payGrade") + "']]");
+//		wait.until(ExpectedConditions.elementToBeClickable(rowByName)).click();
+		waitUntilVisibility(btnAdd);
+		btnAdd.click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Add Currency']"))).click();
+		selectDropdownByLabel("Currency", data.getOrDefault("s", "USD - United States Dollar"));
 		driver.findElement(By.xpath("//label[text()='Minimum Salary']/../following-sibling::div//input"))
 				.sendKeys(data.getOrDefault("minSalary", ""));
 		driver.findElement(By.xpath("//label[text()='Maximum Salary']/../following-sibling::div//input"))
 				.sendKeys(data.getOrDefault("maxSalary", ""));
+		btnSaveAddCurrency.click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 		btnSave.click();
-		return isToastDisplayed("Successfully Saved");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(getToast()));
+		return isToastDisplayed("Successfully Saved")||verifyPayGrade(data.get("payGrade"));
 	}
 
 	public boolean verifyPayGrade(String payGradeName) {
@@ -244,14 +289,7 @@ public class AdminPage extends BasePage {
 		}
 	}
 
-	private boolean isToastDisplayed(String msg) {
-		try {
-			wait.until(ExpectedConditions.textToBePresentInElementLocated(toast, msg));
-			return true;
-		} catch (TimeoutException e) {
-			return false;
-		}
-	}
+
 }
 
 

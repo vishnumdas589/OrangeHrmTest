@@ -62,8 +62,8 @@ public class ConfigReader {
 	public static String getMyLeaveListURL() {return properties.getProperty("url.myLeaveList");}
 	public static String getMyTimesheetURL() {return properties.getProperty("url.myTimesheet");}
 	public static String getSheetAdminData(){return properties.getProperty("workbook.sheet.AdminData");}
-
-
+	public static String getOrgStructureData(){return properties.getProperty("workbook.sheet.OrgStructureData");}
+	public static String getLeaveData(){return properties.getProperty("workbook.sheet.LeaveData");}
 
 
 

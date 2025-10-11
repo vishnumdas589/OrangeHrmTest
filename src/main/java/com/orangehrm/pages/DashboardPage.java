@@ -1,5 +1,6 @@
 package com.orangehrm.pages;
 
+import com.orangehrm.managers.DriverManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -46,6 +47,30 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']//p[contains(.,'Employee Distribution by Sub Unit')]")
     WebElement labelEmpDistBySubUint;
 
+    public WebElement getBtnAssignLeave() {
+        return btnAssignLeave;
+    }
+
+    public WebElement getBtnLeaveList() {
+        return btnLeaveList;
+    }
+
+    public WebElement getBtnTimesheets() {
+        return btnTimesheets;
+    }
+
+    public WebElement getBtnApplyLeave() {
+        return btnApplyLeave;
+    }
+
+    public WebElement getBtnMyLeave() {
+        return btnMyLeave;
+    }
+
+    public WebElement getBtnMyTimesheet() {
+        return btnMyTimesheet;
+    }
+
     @FindBy(xpath = "//button[@class='oxd-icon-button orangehrm-quick-launch-icon']")
     List<WebElement> btnsQuickLaunch;
 
@@ -62,19 +87,15 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//button[@title='My Timesheet']")
     WebElement btnMyTimesheet;
 
-    public List<WebElement> getChartsEmpDist() {
-        return chartsEmpDist;
-    }
-
-    public List<WebElement> getLegendContainer() {
-        return legendContainer;
-    }
-
     @FindBy(xpath = "//div[@class='oxd-pie-chart']")
     List<WebElement> chartsEmpDist;
     @FindBy(xpath = "//ul[@class ='oxd-chart-legend']")
     List<WebElement> legendContainer;
 
+    public List<WebElement> getChartsEmpDist() {return chartsEmpDist;}
+    public List<WebElement> getLegendContainer() {
+        return legendContainer;
+    }
     public boolean isCustomisationIconDisplayed() {
         return iconCustomisation.isDisplayed();
     }
@@ -96,55 +117,56 @@ public class DashboardPage extends BasePage {
     }
 
     public boolean isEmpDistChartDisplayed() {
-        wait.until(ExpectedConditions.visibilityOfAllElements(chartsEmpDist));
-        return chartsEmpDist.stream().allMatch(chart -> chart.isDisplayed());
+        waitUntilAllElementVisibile(getChartsEmpDist());
+        return getChartsEmpDist().stream().allMatch(chart -> chart.isDisplayed());
     }
 
     public boolean isEmpDistChartLegendsDisplayed() {
-        return legendContainer.stream().allMatch(legend -> wait.until(ExpectedConditions.elementToBeClickable(legend)).isDisplayed());
+        return getLegendContainer() .stream().allMatch(legend -> wait.until(ExpectedConditions.elementToBeClickable(legend)).isDisplayed());
     }
 
-    public String getRedirectUrlOnBtnclickAssignLeave() {
-        btnAssignLeave.click();
-        String redirectedUrl = driver.getCurrentUrl();
+    public String getRedirectUrl(WebElement btn) {
+        waitUntilClickable(btn);
+        btn.click();
+        String redirectedUrl = DriverManager.getDriver().getCurrentUrl();
         navigateToPreviousUrl();
         return redirectedUrl;
     }
-
-    public String getRedirectUrlOnBtnclickMyLeaveList() {
-        btnLeaveList.click();
-        String redirectedUrl = driver.getCurrentUrl();
-        navigateToPreviousUrl();
-        return redirectedUrl;
-    }
-
-    public String getRedirectUrlOnBtnclickTimesheets() {
-        btnTimesheets.click();
-        String redirectedUrl = driver.getCurrentUrl();
-        navigateToPreviousUrl();
-        return redirectedUrl;
-    }
-
-    public String getRedirectUrlOnBtnclickApplyLeave() {
-        btnApplyLeave.click();
-        String redirectedUrl = driver.getCurrentUrl();
-        navigateToPreviousUrl();
-        return redirectedUrl;
-    }
-
-    public String getRedirectUrlOnBtnclickMyLeave() {
-        btnMyLeave.click();
-        String redirectedUrl = driver.getCurrentUrl();
-        navigateToPreviousUrl();
-        return redirectedUrl;
-    }
-
-    public String getRedirectUrlOnBtnclickMyTimesheet() {
-        btnMyTimesheet.click();
-        String redirectedUrl = driver.getCurrentUrl();
-        navigateToPreviousUrl();
-        return redirectedUrl;
-    }
+//
+//    public String getRedirectUrlOnBtnclickMyLeaveList(WebElement) {
+//        btnLeaveList.click();
+//        String redirectedUrl = driver.getCurrentUrl();
+//        navigateToPreviousUrl();
+//        return redirectedUrl;
+//    }
+//
+//    public String getRedirectUrlOnBtnclickTimesheets() {
+//        btnTimesheets.click();
+//        String redirectedUrl = driver.getCurrentUrl();
+//        navigateToPreviousUrl();
+//        return redirectedUrl;
+//    }
+//
+//    public String getRedirectUrlOnBtnclickApplyLeave() {
+//        btnApplyLeave.click();
+//        String redirectedUrl = driver.getCurrentUrl();
+//        navigateToPreviousUrl();
+//        return redirectedUrl;
+//    }
+//
+//    public String getRedirectUrlOnBtnclickMyLeave() {
+//        btnMyLeave.click();
+//        String redirectedUrl = driver.getCurrentUrl();
+//        navigateToPreviousUrl();
+//        return redirectedUrl;
+//    }
+//
+//    public String getRedirectUrlOnBtnclickMyTimesheet() {
+//        btnMyTimesheet.click();
+//        String redirectedUrl = driver.getCurrentUrl();
+//        navigateToPreviousUrl();
+//        return redirectedUrl;
+//    }
 
     public boolean verifyAllPieChartsInteractive(WebElement chart, WebElement legendContainer) {
 

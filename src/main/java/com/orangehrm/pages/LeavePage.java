@@ -99,9 +99,13 @@ public class LeavePage extends BasePage {
 	private List<WebElement> tableHeaders;
 
 
+
 	//REPORTS
 	@FindBy(xpath = "//button[normalize-space()='Generate']")
 	private WebElement btnGenerateReport;
+
+	private final By spinner = By.xpath("//div[contains(@class,'oxd-loading-spinner')]");
+	private final By toast = By.cssSelector("div.oxd-toast");
 
 
 	public void selectDropdownOption(WebElement dropdown, String optionText) {
@@ -166,9 +170,10 @@ public class LeavePage extends BasePage {
 		} catch (Exception e) {
 			logger.error("[applyLeave]: Failed to apply leave | " + e.getMessage());
 		}
+
 	}
 
-	public void applyLeave(HashMap<String, String> leaveData) {
+	public boolean applyLeave(Map<String, String> leaveData) {
 		navigateToApplyLeave();
 		selectDropdownOption(dropdownLeaveType, leaveData.getOrDefault("leaveType", "-- Select --"));
 		txtFromDate.sendKeys(leaveData.getOrDefault("fromDate", ""));
@@ -176,6 +181,7 @@ public class LeavePage extends BasePage {
 		txtComments.sendKeys(leaveData.getOrDefault("comments", ""));
 		btnApply.click();
 		logger.info("[applyLeave-HashMap]: Leave applied for " + leaveData);
+		return isToastDisplayed("Successfully Saved");
 	}
 	public void addLeaveEntitlementIndividual(String employeeName, String leaveType, String entitlement) {
 		try {
@@ -197,7 +203,7 @@ public class LeavePage extends BasePage {
 		}
 	}
 
-	public void addLeaveEntitlementIndividual(HashMap<String, String> entitlementData) {
+	public boolean addLeaveEntitlementIndividual(Map<String, String> entitlementData) {
 		try{
 			navigateToAddEntitlement();
 			selectIndividualEmployee();
@@ -215,6 +221,7 @@ public class LeavePage extends BasePage {
 		} catch (Exception e) {
 			logger.error("[addLeaveEntitlementIndividual-HashMap]: Failed | " + e.getMessage());
 		}
+		return isToastDisplayed("Successfully Saved");
 
 	}
 
@@ -236,7 +243,7 @@ public class LeavePage extends BasePage {
 		}
 	}
 
-	public void addLeaveEntitlementMultiple(HashMap<String, String> entitlementData) {
+	public boolean addLeaveEntitlementMultiple(Map<String, String> entitlementData) {
 		navigateToAddEntitlement();
 		selectMultipleEmployees();
 
@@ -247,15 +254,20 @@ public class LeavePage extends BasePage {
 		btnSaveEntitlement.click();
 
 		logger.info("[addLeaveEntitlementMultiple-HashMap]: Entitlement added for " + entitlementData);
+		return isToastDisplayed("Successfully Saved");
 	}
 
 	public boolean generateLeaveReport() {
 		try {
 			navigateToReports();
-			wait.until(ExpectedConditions.elementToBeClickable(btnGenerateReport)).click();
-			wait.until(ExpectedConditions.visibilityOfAllElements(tableHeaders));
+			waitUntilClickable(btnGenerateReport);
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(toast));
+			btnGenerateReport.click();
+			wait.until(ExpectedConditions.visibilityOf(tableHeaders.get(1)));
 			List<String> headers = tableHeaders.stream().map(WebElement::getText).toList();
-
+			for (String header : headers) {
+				System.out.println(header);
+			}
 			boolean allPresent = headers.containsAll(
 					Arrays.asList("Employee", "Leave Entitlements (Days)", "Leave Pending Approval (Days)", "Leave Taken (Days)", "Leave Balance (Days)")
 			);
