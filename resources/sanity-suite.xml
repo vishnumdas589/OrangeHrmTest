@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite" parallel="tests" thread-count="2">
+    <parameter name="browser" value="chrome"/>
+
+
+    <listeners>
+        <listener class-name="com.orangehrm.listeners.Listener"/>
+    </listeners>
+
+    <test name="Sanity Tests">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.orangehrm.tests.LoginTests"/>
+            <class name="com.orangehrm.tests.DashBoardTests"/>
+            <class name="com.orangehrm.tests.PIMTests"/>
+            <class name="com.orangehrm.tests.LeaveTests"/>
+            <class name="com.orangehrm.tests.AdminTests"/>
+        </classes>
+    </test>
+</suite>
