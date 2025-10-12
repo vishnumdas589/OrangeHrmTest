@@ -4490,3 +4490,174 @@ Session ID: a2c0f32ac3358e70fb9ad3289eb98fe4
 [2025-10-12 03:13:57] ERROR com.orangehrm.pages.LeavePage - [generateLeaveReport]: Report generation failed | Index 1 out of bounds for length 0
 [2025-10-12 03:13:57] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
 [2025-10-12 03:13:57] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-12 13:45:58] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-10-12 13:45:58] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:01] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:04] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessfulLogin
+[2025-10-12 13:46:09] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessfulLogin
+[2025-10-12 13:46:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:46:09] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:46:09] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:11] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidPassword
+[2025-10-12 13:46:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidPassword
+[2025-10-12 13:46:16] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:46:17] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:46:17] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:18] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidUsername
+[2025-10-12 13:46:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithInValidUsername
+[2025-10-12 13:46:22] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:46:22] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:46:23] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:24] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:25] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:46:32] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:46:32] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:46:32] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:46:32] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:33] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:36] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:46:48] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:46:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:46:48] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:46:48] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:46:49] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:46:52] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:47:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:47:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:47:13] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:47:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:47:14] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:47:17] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:47:18] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:47:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:47:18] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:47:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:47:19] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:47:23] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:47:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:47:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:47:35] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:47:35] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:47:36] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:47:39] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-12 13:47:51] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDataDrivenLoginTest
+[2025-10-12 13:47:51] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:47:51] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:47:51] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:47:52] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:47:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithEmptyCredentials
+[2025-10-12 13:47:56] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginWithEmptyCredentials
+[2025-10-12 13:47:56] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:47:56] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:47:56] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:47:57] INFO  com.orangehrm.managers.DriverManager - [BasePage BeforeMethod]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:48:00] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessLogOut
+[2025-10-12 13:48:05] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessLogOut
+[2025-10-12 13:48:05] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:48:05] INFO  com.orangehrm.managers.DriverManager - [BasePage AfterMethod]: Exited driver 
+[2025-10-12 13:48:05] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:48:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-12 13:48:10] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:48:11] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageElementsTest
+[2025-10-12 13:48:12] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageElementsTest
+[2025-10-12 13:48:14] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageTest
+[2025-10-12 13:48:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageTest
+[2025-10-12 13:48:19] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDashboardCustomization
+[2025-10-12 13:48:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDashboardCustomization
+[2025-10-12 13:48:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmpDistChart
+[2025-10-12 13:48:36] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmpDistChart
+[2025-10-12 13:48:38] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyQuickLaunchElements
+[2025-10-12 13:48:43] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyQuickLaunchElements
+[2025-10-12 13:48:44] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:48:45] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-12 13:48:45] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:48:49] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-12 13:48:49] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:48:49] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyAddNewEmployee
+[2025-10-12 13:49:04] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyAddNewEmployee
+[2025-10-12 13:49:04] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyAddNewEmployee
+[2025-10-12 13:49:05] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeePersonalDetails
+[2025-10-12 13:49:05] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeePersonalDetails] : Verifying Personal Details for employee: vishnu
+[2025-10-12 13:49:35] ERROR com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeePersonalDetails] : Exception during verification: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h6[normalize-space()='Personal Details']' (tried for 15 second(s) with 500 milliseconds interval)
+[2025-10-12 13:49:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeePersonalDetails
+[2025-10-12 13:49:35] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeePersonalDetails
+[2025-10-12 13:49:35] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeJobDetails
+[2025-10-12 13:49:45] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmployeeJobDetails
+[2025-10-12 13:49:46] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmployeeJobDetails
+[2025-10-12 13:49:46] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeSearch
+[2025-10-12 13:49:48] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: vishnu
+[2025-10-12 13:49:58] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmployeeSearch
+[2025-10-12 13:49:58] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmployeeListView
+[2025-10-12 13:50:10] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmployeeListView
+[2025-10-12 13:50:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:50:11] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-12 13:50:11] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:50:15] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-12 13:50:15] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:50:18] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyAddUser
+[2025-10-12 13:50:36] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyAddUser
+[2025-10-12 13:50:36] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyJobTitle
+[2025-10-12 13:50:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyJobTitle
+[2025-10-12 13:50:42] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyPayGrade
+[2025-10-12 13:51:57] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyPayGrade
+[2025-10-12 13:51:57] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmploymentStatus
+[2025-10-12 13:52:03] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmploymentStatus
+[2025-10-12 13:52:03] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:06] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:06] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:09] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:09] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:11] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:11] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:18] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:18] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:25] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:25] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:27] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:27] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:29] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:29] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:32] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:32] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyOrganizationStructure
+[2025-10-12 13:52:34] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyOrganizationStructure
+[2025-10-12 13:52:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:52:34] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-12 13:52:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 13:52:39] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-12 13:52:39] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 13:52:39] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyApplyLeaveFunctionality
+[2025-10-12 13:52:40] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyApplyLeaveFunctionality
+[2025-10-12 13:52:40] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyMyLeaveList
+[2025-10-12 13:52:40] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyMyLeaveList
+[2025-10-12 13:52:41] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyLeaveEntitlementIndividual
+[2025-10-12 13:52:41] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyLeaveEntitlementIndividual
+[2025-10-12 13:52:41] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyLeaveEntitlementMultiple
+[2025-10-12 13:52:41] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyLeaveEntitlementMultiple
+[2025-10-12 13:52:41] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLeaveReports
+[2025-10-12 13:52:44] INFO  com.orangehrm.pages.LeavePage - [navigateToReports]: Navigated to Leave Entitlements and Usage Report
+[2025-10-12 13:53:05] ERROR com.orangehrm.pages.LeavePage - [generateLeaveReport]: Report generation failed | Index 1 out of bounds for length 0
+[2025-10-12 13:53:05] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyLeaveReports
+[2025-10-12 13:53:05] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyLeaveReports
+[2025-10-12 13:53:05] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 13:53:06] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 
+[2025-10-12 13:53:06] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-10-12 14:04:13] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-12 14:04:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  
+[2025-10-12 14:04:19] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  
+[2025-10-12 14:04:30] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeePersonalDetails] : Verifying Personal Details for employee: vishnu
+[2025-10-12 14:04:31] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeePersonalDetails] : All personal details fields displayed successfully for vishnu
+[2025-10-12 14:04:31] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : Verifying Job Details for employee: vishnu
+[2025-10-12 14:04:33] INFO  com.orangehrm.pages.PIMPage - [PIMPage][verifyEmployeeJobDetails] : All job detail fields displayed successfully for vishnu
+[2025-10-12 14:04:35] INFO  com.orangehrm.pages.PIMPage - [searchEmployeeByName]: Searched for employee name: vishnu
+[2025-10-12 14:04:58] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-12 14:04:58] INFO  com.orangehrm.managers.DriverManager - [LoginBasePage AfterClass]: Exited driver 

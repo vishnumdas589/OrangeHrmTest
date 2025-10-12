@@ -18,19 +18,19 @@ public class LoginPage extends BasePage  {
 	}
 	
 	@FindBy(xpath="//input[@placeholder='Username']")
-	WebElement txtUsername;
+	private WebElement txtUsername;
 	@FindBy(xpath="//input[@placeholder='Password']")
-	WebElement txtPassword;
+	private WebElement txtPassword;
 	@FindBy(xpath ="//button[@type = 'submit']")
-	WebElement BtnLogin;
+	private WebElement BtnLogin;
 	@FindBy(xpath = "//p[text() ='Invalid credentials']")
-	WebElement alertInvalidCredencial;
+	private WebElement alertInvalidCredencial;
 	@FindBy(xpath = "//input[@name='username']/parent::div/following-sibling::span[text()='Required']")
-	WebElement alertUserNameRequired;
+	private WebElement alertUserNameRequired;
 	@FindBy(xpath = "//input[@name='password']/parent::div/following-sibling::span[text()='Required']")
-	WebElement alertPasswordRequired;
+	private WebElement alertPasswordRequired;
 	@FindBy(xpath = "//h5[text()='Login']")
-	WebElement labelLogin;
+	private WebElement labelLogin;
 
 
 	public WebElement getTxtUsername() {

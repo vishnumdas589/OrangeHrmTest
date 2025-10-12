@@ -148,6 +148,7 @@ public class PIMPage extends BasePage{
 		txtEmpFirstName.sendKeys(employeeData.getOrDefault("firstname", ""));
 		txtEmpLastName.sendKeys(employeeData.getOrDefault("lastname", ""));
 		txtEmpMiddleName.sendKeys(employeeData.getOrDefault("middleName", ""));
+		txtSearchEmpId.sendKeys(employeeData.getOrDefault("searchEmpId", "Dummy"));
 
 		if (employeeData.containsKey("username")) {
 			toggleBtnAddEmpCreateLogin.click();
@@ -312,9 +313,7 @@ public class PIMPage extends BasePage{
 		}
 	}
 
-	/**
-	 * Same logic but searches by employee ID instead of name.
-	 */
+
 	public boolean openEmployeeDetailsById(String empId) {
 		try {
 			wait.until(ExpectedConditions.visibilityOf(txtSearchEmpId)).clear();
@@ -384,10 +383,8 @@ public class PIMPage extends BasePage{
 		try {
 			logger.info("[PIMPage][verifyEmployeePersonalDetails] : Verifying Personal Details for employee: " + employeeName);
 
-			// Step 3: Verify that Personal Details page is loaded
 			wait.until(ExpectedConditions.visibilityOf(labelPersonalDetails));
 
-			// Step 4: Check if all important personal detail fields are visible
 			boolean allDisplayed =
 					txtEmpOtherId.isDisplayed() &&
 							txtEmpLicenseNumber.isDisplayed() &&

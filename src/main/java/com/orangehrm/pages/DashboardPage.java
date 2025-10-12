@@ -22,30 +22,30 @@ public class DashboardPage extends BasePage {
         // TODO Auto-generated constructor stub
     }
     @FindBy(xpath = "//span[text()='Admin']")
-    WebElement adminMenu;
+    private WebElement adminMenu;
 
     @FindBy(xpath = "//span[text()='PIM']")
-    WebElement pimMenu;
+    private WebElement pimMenu;
 
     @FindBy(xpath = "//span[text()='Leave']")
-    WebElement leaveMenu;
+    private WebElement leaveMenu;
 
     @FindBy(xpath = "//h6[text()='Dashboard']")
-    WebElement labelDashboard;
+    private WebElement labelDashboard;
     @FindBy(xpath = "//span[@class='oxd-userdropdown-tab']")
-    WebElement lnkUserDropdown;
+    private WebElement lnkUserDropdown;
     @FindBy(xpath = "//a[text()='Logout']")
-    WebElement lnkLogout;
+    private WebElement lnkLogout;
 
     @FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']")
-    List<WebElement> widgets;
+    private List<WebElement> widgets;
 
     @FindBy(xpath = "//i[@class='oxd-icon bi-gear-fill orangehrm-leave-card-icon']")
-    WebElement iconCustomisation;
+    private WebElement iconCustomisation;
     @FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']//p[contains(.,'Quick Launch')]")
-    WebElement labelEmpDistByLoc;
+    private WebElement labelEmpDistByLoc;
     @FindBy(xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']//p[contains(.,'Employee Distribution by Sub Unit')]")
-    WebElement labelEmpDistBySubUint;
+    private WebElement labelEmpDistBySubUint;
 
     public WebElement getBtnAssignLeave() {
         return btnAssignLeave;
@@ -132,41 +132,6 @@ public class DashboardPage extends BasePage {
         navigateToPreviousUrl();
         return redirectedUrl;
     }
-//
-//    public String getRedirectUrlOnBtnclickMyLeaveList(WebElement) {
-//        btnLeaveList.click();
-//        String redirectedUrl = driver.getCurrentUrl();
-//        navigateToPreviousUrl();
-//        return redirectedUrl;
-//    }
-//
-//    public String getRedirectUrlOnBtnclickTimesheets() {
-//        btnTimesheets.click();
-//        String redirectedUrl = driver.getCurrentUrl();
-//        navigateToPreviousUrl();
-//        return redirectedUrl;
-//    }
-//
-//    public String getRedirectUrlOnBtnclickApplyLeave() {
-//        btnApplyLeave.click();
-//        String redirectedUrl = driver.getCurrentUrl();
-//        navigateToPreviousUrl();
-//        return redirectedUrl;
-//    }
-//
-//    public String getRedirectUrlOnBtnclickMyLeave() {
-//        btnMyLeave.click();
-//        String redirectedUrl = driver.getCurrentUrl();
-//        navigateToPreviousUrl();
-//        return redirectedUrl;
-//    }
-//
-//    public String getRedirectUrlOnBtnclickMyTimesheet() {
-//        btnMyTimesheet.click();
-//        String redirectedUrl = driver.getCurrentUrl();
-//        navigateToPreviousUrl();
-//        return redirectedUrl;
-//    }
 
     public boolean verifyAllPieChartsInteractive(WebElement chart, WebElement legendContainer) {
 
