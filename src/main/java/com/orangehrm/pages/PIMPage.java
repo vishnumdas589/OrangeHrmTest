@@ -128,7 +128,7 @@ public class PIMPage extends BasePage{
 	public void navigateToJobs(){
 		tabJob.click();
 	}
-	public void createEmployee(String firstname, String lastname, String username, String password) {
+	public boolean createEmployee(String firstname, String lastname, String username, String password) {
 		navigateToPimPage();
 		btnAdd.click();
 		wait.until(ExpectedConditions.visibilityOf(txtEmpFirstName));
@@ -140,6 +140,7 @@ public class PIMPage extends BasePage{
 		txtAddEmpPassword.sendKeys(password);
 		txtAddEmpConfirmPassword.sendKeys(password);
 		btnSave.click();
+		return isToastDisplayed("Successfully Saved");
 	}
 	public boolean createEmployee(Map<String, String> employeeData) {
 		navigateToPimPage();

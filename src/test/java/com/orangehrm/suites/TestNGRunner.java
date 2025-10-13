@@ -30,12 +30,12 @@ public class TestNGRunner {
 
         } catch (Exception e) {
             logger.error("Suite Execution Failed: " + e.getMessage());
-            -e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
     private static String getSuitePath(String suiteName) {
-        String basePath = System.getProperty("user.dir") + "/src/test/resources/testng-suites/";
+        String basePath = System.getProperty("user.dir") + "/src/test/resources/";
         switch (suiteName) {
             case "smoke":
                 return basePath + "smoke-suite.xml";

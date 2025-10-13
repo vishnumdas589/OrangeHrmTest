@@ -51,7 +51,11 @@ public class ConfigReader {
 	public static String getLoginURL() {
 		return properties.getProperty("url.login");
 	}
-	public static String getWorkBookName() {return properties.getProperty("workbook.name");};
+	public static String getDashboardUrl(){return properties.getProperty("url.dashboard");}
+	public static String getLeaveURL() {return properties.getProperty("url.leave");}
+	public static String getAdminURL() {return properties.getProperty("url.admin");}
+	public static String getPIMURL() {return properties.getProperty("url.pim");}
+	public static String getWorkBookName() {return properties.getProperty("workbook.name");}
 	public static String getDashboardURL() {return properties.getProperty("url.dashboard");}
 	public static String getSheetLoginData(){return properties.getProperty("workbook.sheet.LoginData2D");}
 	public static String getSheetDashBoardLabelData(){return properties.getProperty("workbook.sheet.DashBoardLabelData");}

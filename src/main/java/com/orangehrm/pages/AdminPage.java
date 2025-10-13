@@ -135,6 +135,29 @@ public class AdminPage extends BasePage {
 			return false;
 		}
 	}
+	public boolean addUser(String role,String name,String statuss,String userName,String passwd) {
+		String userRole = role;
+		String empName = name;
+		String status = statuss;
+		String username = userName;
+		String password = passwd;
+
+		btnAdd.click();
+		selectDropdownByLabel("User Role", userRole);
+
+		enterEmployeeName(empName);
+
+		selectDropdownByLabel("Status", status);
+		txtUsername.sendKeys(username);
+
+		WebElement pass = DriverManager.getDriver().findElement(By.xpath("//label[normalize-space()='Password']/../following-sibling::div//input[@type='password']"));
+		WebElement cpass = DriverManager.getDriver().findElement(By.xpath("//label[normalize-space()='Confirm Password']/../following-sibling::div//input[@type='password']"));
+		pass.sendKeys(password);
+		cpass.sendKeys(password);
+
+		btnSave.click();
+		return isToastDisplayed("Successfully Saved") || searchUser(username);
+	}
 
 
 	public boolean addUser(Map<String, String> data) {
@@ -152,13 +175,21 @@ public class AdminPage extends BasePage {
 		selectDropdownByLabel("Status", status);
 		txtUsername.sendKeys(username);
 
-		WebElement pass = driver.findElement(By.xpath("//label[normalize-space()='Password']/../following-sibling::div//input[@type='password']"));
-		WebElement cpass = driver.findElement(By.xpath("//label[normalize-space()='Confirm Password']/../following-sibling::div//input[@type='password']"));
+		WebElement pass = DriverManager.getDriver().findElement(By.xpath("//label[normalize-space()='Password']/../following-sibling::div//input[@type='password']"));
+		WebElement cpass = DriverManager.getDriver().findElement(By.xpath("//label[normalize-space()='Confirm Password']/../following-sibling::div//input[@type='password']"));
 		pass.sendKeys(password);
 		cpass.sendKeys(password);
 
 		btnSave.click();
 		return isToastDisplayed("Successfully Saved") || searchUser(username);
+	}
+	public boolean searchUser(String username) {
+		WebElement searchUsername = DriverManager.getDriver().findElement(By.xpath("//label[normalize-space()='Username']/../following-sibling::div//input"));
+		searchUsername.clear();
+		searchUsername.sendKeys(username);
+		btnSearch.click();
+		waitForTableOrEmpty();
+		return isTextInTable(username);
 	}
 	public void enterEmployeeName(String empName) {
 		try {
@@ -185,14 +216,7 @@ public class AdminPage extends BasePage {
 	}
 
 
-	public boolean searchUser(String username) {
-		WebElement searchUsername = driver.findElement(By.xpath("//label[normalize-space()='Username']/../following-sibling::div//input"));
-		searchUsername.clear();
-		searchUsername.sendKeys(username);
-		btnSearch.click();
-		waitForTableOrEmpty();
-		return isTextInTable(username);
-	}
+
 
 	public boolean addJobTitle(Map<String, String> data) {
 		navigateToJobSubMenu("Job Titles");
@@ -222,9 +246,9 @@ public class AdminPage extends BasePage {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
 //		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Add Currency']"))).click();
 		selectDropdownByLabel("Currency", data.getOrDefault("s", "USD - United States Dollar"));
-		driver.findElement(By.xpath("//label[text()='Minimum Salary']/../following-sibling::div//input"))
+		DriverManager.getDriver().findElement(By.xpath("//label[text()='Minimum Salary']/../following-sibling::div//input"))
 				.sendKeys(data.getOrDefault("minSalary", ""));
-		driver.findElement(By.xpath("//label[text()='Maximum Salary']/../following-sibling::div//input"))
+		DriverManager.getDriver().findElement(By.xpath("//label[text()='Maximum Salary']/../following-sibling::div//input"))
 				.sendKeys(data.getOrDefault("maxSalary", ""));
 		btnSaveAddCurrency.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
@@ -253,10 +277,10 @@ public class AdminPage extends BasePage {
 
 	public boolean addOrganizationUnit(Map<String, String> data) {
 		if (!navigateToOrganizationStructure()) return false;
-		driver.findElement(By.xpath("//button[normalize-space()='Edit']")).click();
-		driver.findElement(By.xpath("//button[normalize-space()='Add']")).click();
+		DriverManager.getDriver().findElement(By.xpath("//button[normalize-space()='Edit']")).click();
+		DriverManager.getDriver().findElement(By.xpath("//button[normalize-space()='Add']")).click();
 
-		driver.findElement(By.xpath("//input[@placeholder='Type name']"))
+		DriverManager.getDriver().findElement(By.xpath("//input[@placeholder='Type name']"))
 				.sendKeys(data.getOrDefault("orgUnit", ""));
 		selectDropdownByLabel("Parent Unit", data.getOrDefault("subUnit", ""));
 		btnSave.click();

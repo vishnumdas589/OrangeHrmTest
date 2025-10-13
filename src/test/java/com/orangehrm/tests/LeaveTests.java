@@ -1,5 +1,8 @@
 package com.orangehrm.tests;
 import com.orangehrm.data.DataProviders;
+import com.orangehrm.managers.DriverManager;
+import com.orangehrm.pages.AdminPage;
+import com.orangehrm.utils.ConfigReader;
 import org.apache.logging.log4j.Logger;
 
 import com.orangehrm.Base.BasePageTest;
@@ -18,9 +21,17 @@ public class LeaveTests extends BasePageTest {
 	private static final Logger logger = LoggerManager.getLogger(LeaveTests.class);
 	private LeavePage leavePg;
 
-	@BeforeClass
-	public void setUpPage() {
+	@BeforeClass(alwaysRun = true)
+	public void setupleavePage() {
+		navigateToBaseUrl();
+		loginPg.loginWithCredentials(ConfigReader.getDefaultUserName(), ConfigReader.getDefaultPassword());
 		leavePg = new LeavePage();
+	}
+
+	@Test(priority = 1, groups = {"smoke"})
+	public void verifyLeavePage() {
+		leavePg.navigateToLeavePage();
+		Assert.assertEquals(DriverManager.getDriver().getCurrentUrl(), ConfigReader.getLeaveURL());
 	}
 
 	@Test(priority = 1,dataProvider = "LeaveDataMap",dataProviderClass = DataProviders.class, description = "Verify apply leave functionality")

@@ -9,41 +9,35 @@ import com.orangehrm.managers.LoggerManager;
 import com.orangehrm.utils.ConfigReader;
 
 public class BasePageTest {
-	private static final Logger logger = LoggerManager.getLogger(DriverManager.class);
+	private static final Logger logger = LoggerManager.getLogger(BasePageTest.class);
 	protected LoginPage loginPg;
 	protected DashboardPage dashboardPg;
 
-		@BeforeClass
-	    @Parameters({"browser"})
-	    public void setup(@Optional("chrome") String browser) {
-	        DriverManager.initDriver(browser);// CHANGE: no new DriverManager instance, call initDriver()
-	        loginPg = new LoginPage();
-	        dashboardPg = new DashboardPage();
-	        navigateToBaseUrl();
-	        loginPg.loginWithCredentials(ConfigReader.getDefaultUserName(), ConfigReader.getDefaultPassword());
-	        logger.info("[LoginBasePage BeforeClass]: navigateToBaseUrl and logged in to dashboard page  ");
-	        logger.info("[LoginBasePage BeforeClass]: driver initialized and assigned, loginpg & dashboardpg objects set  ");
-	    }
+	@BeforeClass(alwaysRun = true)
+	@Parameters({"browser"})
+	public void setup(@Optional("chrome") String browser) {
+		DriverManager.initDriver(browser);
+		loginPg = new LoginPage();
+		dashboardPg = new DashboardPage();
 
-	    @AfterClass// CHANGE: use @AfterMethod instead of @AfterTest
-	    public void tearDown() {
-			if(DriverManager.getDriver().getCurrentUrl().contains("dashboard")) {
-				dashboardPg.logout();
-				logger.info("[LoginBasePage AfterClass]: logged out of  DashBoardPage ");
+		logger.info("[BaseTest] Driver initialized for browser: {}", browser);
+		logger.info("[BaseTest] Page objects created successfully.");
+	}
+
+	@AfterClass(alwaysRun = true)
+	public void tearDown() {
+		try {
+			if (DriverManager.getDriver() != null) {
+				DriverManager.quitDriver();
+				logger.info("[BaseTest] Driver quit successfully.");
 			}
-
-	        DriverManager.quitDriver();
-	        logger.info("[LoginBasePage AfterClass]: Exited driver ");
-	    }
-
-	    public void navigateToBaseUrl() {
-	        DriverManager.getDriver().get(ConfigReader.getLoginURL()); // CHANGE: always pull driver from DriverManager
-	    }
-		public void navigateToPreviousUrl(){
-		DriverManager.getDriver().navigate().back();
+		} catch (Exception e) {
+			logger.error("[BaseTest] Error while quitting driver: {}", e.getMessage());
 		}
+	}
 
-
-
-
+	protected void navigateToBaseUrl() {
+		DriverManager.getDriver().get(ConfigReader.getLoginURL());
+		logger.info("[BaseTest] Navigated to base URL: {}", ConfigReader.getLoginURL());
+	}
 }

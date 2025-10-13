@@ -13,28 +13,28 @@ import org.testng.asserts.SoftAssert;
 
 public class DashBoardTests extends BasePageTest {
 	private static final Logger logger = LoggerManager.getLogger(DashBoardTests.class);
-	@BeforeMethod
-	public void beforeMethod() {
-		if(DriverManager.getDriver().getCurrentUrl().trim().equalsIgnoreCase(ConfigReader.getLoginURL())){
-			loginPg.loginWithCredentials(ConfigReader.getDefaultUserName(), ConfigReader.getDefaultPassword());
-		}
+	@BeforeMethod(alwaysRun = true)
+	public void loginBeforeEachTest() {
+		navigateToBaseUrl();
+		loginPg.loginWithCredentials(ConfigReader.getDefaultUserName(), ConfigReader.getDefaultPassword());
 	}
-	@AfterMethod
-	public void afterMethod() {
+
+	@AfterMethod(alwaysRun = true)
+	public void logoutAfterEachTest() {
 		dashboardPg.logout();
 	}
 
-	@Test
+	@Test(groups = {"smoke", "regression"},dependsOnMethods = {"verifySuccessfulLogin"})
 	public void dashBoardPageTest() {
 		Assert.assertTrue(dashboardPg.isDashboardPageDisplayed());
 	}
-	@Test
+	@Test(groups = {"regression"},dependsOnMethods = {"verifySuccessfulLogin"})
 	public void dashBoardPageElementsTest() {
 		Assert.assertEquals(dashboardPg.getWidgetsCount(),7);
 		Assert.assertTrue(dashboardPg.isAllWidgetsDisplayed());
 	}
 
-	@Test
+	@Test(groups = {"sanity","regression"})
 	public void verifyQuickLaunchElements() {
 		Assert.assertEquals(dashboardPg.getQuickLaunchButtonsCount(),6);
 		Assert.assertTrue(dashboardPg.isAllQuickLaunchButtonsDisplayed());
@@ -47,7 +47,7 @@ public class DashBoardTests extends BasePageTest {
 		softAssert.assertEquals(dashboardPg.getRedirectUrl(dashboardPg.getBtnMyTimesheet()),ConfigReader.getMyTimesheetURL());
 		softAssert.assertAll();
 	}
-	@Test
+	@Test(groups = {"regression"})
 	public void verifyEmpDistChart(){
 		Assert.assertTrue(dashboardPg.isEmpDistChartDisplayed());
 		Assert.assertTrue(dashboardPg.isEmpDistChartLegendsDisplayed());
@@ -66,7 +66,7 @@ public class DashBoardTests extends BasePageTest {
 //		Assert.assertTrue(true);
 //	}
 
-	@Test
+	@Test(groups = {"sanity", "regression"})
 	public void verifyDashboardCustomization() {
 		Assert.assertTrue(dashboardPg.isCustomisationIconDisplayed());
 	}
