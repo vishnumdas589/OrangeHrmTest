@@ -5593,3 +5593,108 @@ Session ID: c9f408c698b0bfa7a8a268892d2da5c9
 [2025-10-13 07:07:03] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
 [2025-10-13 07:07:03] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver quit successfully.
 [2025-10-13 07:07:03] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-10-13 09:35:24] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-10-13 09:35:24] INFO  com.orangehrm.listeners.Listener - [Listener] All tests started
+[2025-10-13 09:35:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: firefox
+[2025-10-13 09:35:24] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-13 09:35:30] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver initialized for browser: chrome
+[2025-10-13 09:35:30] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Page objects created successfully.
+[2025-10-13 09:35:34] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:35:37] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDashboardCustomization
+[2025-10-13 09:35:39] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver initialized for browser: firefox
+[2025-10-13 09:35:39] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Page objects created successfully.
+[2025-10-13 09:35:39] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDashboardCustomization
+[2025-10-13 09:35:43] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:35:43] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:35:44] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmpDistChart
+[2025-10-13 09:35:46] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDashboardCustomization
+[2025-10-13 09:35:46] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyDashboardCustomization
+[2025-10-13 09:35:50] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:35:52] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyEmpDistChart
+[2025-10-13 09:36:02] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyEmpDistChart
+[2025-10-13 09:36:04] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:07] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyQuickLaunchElements
+[2025-10-13 09:36:09] INFO  com.orangehrm.listeners.Listener - [Listener] Test Failed: verifyEmpDistChart
+[2025-10-13 09:36:10] INFO  com.orangehrm.listeners.Listener - [Listener] Added screenshot to report on failed test: verifyEmpDistChart
+[2025-10-13 09:36:15] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:22] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyQuickLaunchElements
+[2025-10-13 09:36:30] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyQuickLaunchElements
+[2025-10-13 09:36:34] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: firefox
+[2025-10-13 09:36:38] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyQuickLaunchElements
+[2025-10-13 09:36:41] INFO  com.orangehrm.managers.DriverManager - [Driver] Initializing driver for browser: chrome
+[2025-10-13 09:36:44] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver initialized for browser: chrome
+[2025-10-13 09:36:44] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Page objects created successfully.
+[2025-10-13 09:36:48] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:48] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginPage
+[2025-10-13 09:36:49] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:49] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver initialized for browser: firefox
+[2025-10-13 09:36:49] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Page objects created successfully.
+[2025-10-13 09:36:49] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginPage
+[2025-10-13 09:36:50] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:50] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessfulLogin
+[2025-10-13 09:36:53] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:53] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginPage
+[2025-10-13 09:36:55] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:55] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifyLoginPage
+[2025-10-13 09:36:57] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:57] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessfulLogin
+[2025-10-13 09:36:57] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessfulLogin
+[2025-10-13 09:36:57] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:36:58] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageElementsTest
+[2025-10-13 09:37:00] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageElementsTest
+[2025-10-13 09:37:03] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:37:04] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: verifySuccessfulLogin
+[2025-10-13 09:37:05] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:37:07] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageTest
+[2025-10-13 09:37:08] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageElementsTest
+[2025-10-13 09:37:08] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageTest
+[2025-10-13 09:37:10] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-13 09:37:12] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageElementsTest
+[2025-10-13 09:37:13] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver quit successfully.
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidPassword
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithInValidPassword
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidUsername
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithInValidUsername
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithEmptyCredentials
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithEmptyCredentials
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessLogOut
+[2025-10-13 09:37:13] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifySuccessLogOut
+[2025-10-13 09:37:14] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:15] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
+[2025-10-13 09:37:16] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: dashBoardPageTest
+[2025-10-13 09:37:17] INFO  com.orangehrm.listeners.Listener - [Listener] Test Passed: dashBoardPageTest
+[2025-10-13 09:37:18] INFO  com.orangehrm.managers.DriverManager - [Driver] Quitting driver
+[2025-10-13 09:37:20] INFO  com.orangehrm.Base.BasePageTest - [BaseTest] Driver quit successfully.
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidPassword
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithInValidPassword
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithInValidUsername
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithInValidUsername
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyLoginWithEmptyCredentials
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyLoginWithEmptyCredentials
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifySuccessLogOut
+[2025-10-13 09:37:20] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifySuccessLogOut
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test started: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] Test Skipped: verifyDataDrivenLoginTest
+[2025-10-13 09:37:21] INFO  com.orangehrm.listeners.Listener - [Listener] All tests finished. Flushing report.
